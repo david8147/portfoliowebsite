@@ -1,0 +1,154 @@
+.Technology{
+    height: 30px;
+    width: 30px;
+    margin:5px;
+}
+.Longer{
+    height: 30px;
+    width: 70px;
+    margin:5px;
+}
+
+.Technologies {
+    margin-top: 6vh;
+    text-align: center;
+}
+
+.Technology {
+    height: 4.5vh;
+    padding-left: 10px;
+    width: auto;
+}
+
+.FullGraph {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.YAxis {
+    display: inline-block;
+    width: 20vh;
+    margin-left: 2.8vh;
+    margin-right: 7vh;
+    text-align: left;
+    font-size: 2vh;
+}
+
+
+.YValue {
+    margin-bottom: 3.8vh;
+}
+
+.BarsGraph {
+
+}
+
+.Bars {
+    text-align:center;
+
+}
+
+.text-overflow-center {
+    margin-left: -100%;
+    margin-right: -100%;
+    text-align: center;
+    color: #B0BEC5;
+    font-size: 2.1vh;
+}
+
+.Bar {
+    display: inline-block;
+    width: 5vh;
+    margin-left: 2.8vh;
+    margin-right: 2.8vh;
+}
+
+.BarLine {
+
+}
+
+.BarImage {
+    height: 5.5vh;
+    margin-bottom: 1.5vh;
+}
+
+.AllSkills {
+
+}
+
+.SkillText{
+
+}
+
+
+/*.Skills {*/
+/*display: flex;*/
+/*flex-flow: row wrap;*/
+/*align-items: center;*/
+/*justify-content: center;*/
+/*margin: auto;*/
+/*}*/
+
+/*.Technologies {*/
+/*margin-top: 6vh;*/
+/*text-align: center;*/
+/*}*/
+
+/*.Technology {*/
+/*height: 40px;*/
+/*padding-left: 10px;*/
+/*width: auto;*/
+/*}*/
+
+/*.FullGraph {*/
+/*display: flex;*/
+/*flex-flow: row wrap;*/
+/*justify-content: center;*/
+/*text-align: center;*/
+/*}*/
+
+/*.YAxis {*/
+/*width: 150px;*/
+/*font-size: 1.95vh;*/
+/*margin-top: -3%;*/
+/*}*/
+
+/*.YValue {*/
+/*padding-bottom: .7vh;*/
+/*padding-top: .7vh;*/
+/*}*/
+
+/*.BarsGraph {*/
+/*height: 30vh;*/
+/*}*/
+
+/*.Bars {*/
+/*margin-top: auto;*/
+/*}*/
+
+/*.Bar {*/
+/*display: inline-block;*/
+/*width: 4%;*/
+/*margin-left: 2.8vh;*/
+/*margin-right: 2.8vh;*/
+/*}*/
+
+/*.BarLine {*/
+
+/*border-style: solid;*/
+/*border-bottom: black;*/
+/*}*/
+
+/*.BarImage {*/
+/*height: 7vh;*/
+/*padding-bottom: 10px;*/
+/*}*/
+
+/*.AllSkills {*/
+
+/*}*/
+
+/*.SkillText{*/
+
+/*}*/

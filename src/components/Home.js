@@ -1,9 +1,11 @@
 import React,{Component} from 'react';
 
-import FirstComponent from './FirstComponent'
-import SecondComponent from './RelevantCourses'
-import ThirdComponent from './Skills'
+import Front from './Front'
+import RelevantCourses from './RelevantCourses'
+import Skills from './Skills'
 import Contact from './Contact'
+import Education from './Education'
+import Projects from './Projects'
 
 import Fade from 'react-reveal/Fade';
 import  { slide as Menu}  from 'react-burger-menu'
@@ -24,16 +26,22 @@ class Home extends Component{
             <h2 key="0"><i className="fa fa-fw fa-inbox fa-2x"/><span>Navigation</span></h2>,
 
             <div key="1" className="MenuContainer" onClick={() => scrollToComponent(this.FIRST, {offset: 0, align: 'top', duration: 1500})}>
-                <span className="MenuItem">First</span>
+                <span className="MenuItem">Front</span>
             </div>,
             <div key="2" className="MenuContainer" onClick={() => scrollToComponent(this.SECOND, {offset: 0, align: 'top', duration: 1500})}>
-                <span className="MenuItem">Second</span>
+                <span className="MenuItem">Projects</span>
             </div>,
             <div key="3" className="MenuContainer" onClick={() => scrollToComponent(this.THIRD, {offset: 0, align: 'top', duration: 1500})}>
-                <span className="MenuItem">Third</span>
+                <span className="MenuItem">Education</span>
             </div>,
             <div key="4" className="MenuContainer" onClick={() => scrollToComponent(this.FOURTH, {offset: 0, align: 'top', duration: 1500})}>
-                <span className="MenuItem">Fourth</span>
+                <span className="MenuItem">Relevant Courses</span>
+            </div>,
+            <div key="5" className="MenuContainer" onClick={() => scrollToComponent(this.FIFTH, {offset: 0, align: 'top', duration: 1500})}>
+                <span className="MenuItem">Skills</span>
+            </div>,
+            <div key="6" className="MenuContainer" onClick={() => scrollToComponent(this.SIXTH, {offset: 0, align: 'top', duration: 1500})}>
+                <span className="MenuItem">Contact</span>
             </div>,
         ];
         return (
@@ -54,22 +62,34 @@ class Home extends Component{
                     this.FIRST = section;
                 }}>
                 </section>
-                <FirstComponent/>
+                <Front/>
 
                 <section ref={(section) => {
                     this.SECOND = section;
                 }}>
                 </section>
-                <SecondComponent/>
+                <Projects/>
 
                 <section ref={(section) => {
                     this.THIRD = section;
                 }}>
                 </section>
-                <ThirdComponent/>
+                <Education/>
 
                 <section ref={(section) => {
                     this.FOURTH = section;
+                }}>
+                </section>
+                <RelevantCourses/>
+
+                <section ref={(section) => {
+                    this.FIFTH = section;
+                }}>
+                </section>
+                <Skills/>
+
+                <section ref={(section) => {
+                    this.SIXTH = section;
                 }}>
                 </section>
                 <Contact/>
