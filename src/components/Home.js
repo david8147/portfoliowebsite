@@ -68,7 +68,7 @@ class Home extends Component{
                 <Transition height='200px' from="#388E3C" to="#981703" position={0.5}/>
                 <section
                     ref={(section) => {
-                    this.SECOND = sectigon;
+                    this.SECOND = section;
                 }}>
                 </section>
                 <Projects/>
