@@ -8,7 +8,11 @@ import Home from './components/Home.js'
 class App extends Component{
     constructor(props){
         super(props);
+        this.state={
+            open:false,
+        }
     }
+
     render(){
         return(
             <BrowserRouter>
