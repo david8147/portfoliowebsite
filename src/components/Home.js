@@ -12,6 +12,8 @@ import  { slide as Menu}  from 'react-burger-menu'
 import Typist from 'react-typist';
 import ReactRevealText from "react-reveal-text";
 import scrollToComponent from 'react-scroll-to-component';
+import ScrollingColorBackground from 'react-scrolling-color-background'
+import { AnimatedBg, Transition } from 'scroll-background';
 
 class Home extends Component{
     constructor(props){
@@ -54,28 +56,29 @@ class Home extends Component{
     }
     render(){
         return(
-            <div style={{backgroundColor:'#3275a8'}}>
+            <AnimatedBg>
                 {this.getMenu()}
                 <div style={{ height:80}}/>
-
-                <section ref={(section) => {
+                <section
+                    ref={(section) => {
                     this.FIRST = section;
                 }}>
                 </section>
-                <Front/>
-
-                <section ref={(section) => {
-                    this.SECOND = section;
+                <Front />
+                <Transition height='200px' from="#388E3C" to="#981703" position={0.5}/>
+                <section
+                    ref={(section) => {
+                    this.SECOND = sectigon;
                 }}>
                 </section>
                 <Projects/>
-
+                <Transition from="#981703" to="#301732" />
                 <section ref={(section) => {
                     this.THIRD = section;
                 }}>
                 </section>
                 <Education/>
-
+                <Transition height='100px' from="#0D47A1" to="#388E3C" />
                 <section ref={(section) => {
                     this.FOURTH = section;
                 }}>
@@ -94,7 +97,7 @@ class Home extends Component{
                 </section>
                 <Contact/>
 
-            </div>
+            </AnimatedBg>
         )
     }
 }
