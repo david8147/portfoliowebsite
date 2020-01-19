@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import Projects from '../Projects'
 class wheelthere extends Component{
     render(){
         return(
@@ -12,6 +12,7 @@ class wheelthere extends Component{
                 <img style={style.projImages} alt="" src={require('../../images/ProjectImages/wheelthere/wheelthere5.png')}/>
                 <img style={style.projImages} alt="" src={require('../../images/ProjectImages/wheelthere/wheelthere6.png')}/>
                 <img style={style.projImages} alt="" src={require('../../images/ProjectImages/wheelthere/wheelthere7.png')}/>
+                <Projects/>
             </div>
         )
     }

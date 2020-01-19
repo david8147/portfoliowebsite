@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3551cf82-57d8-488f-a1cc-51198de5b37c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/images/ucberkeleyseal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProjectsPages/ProjectPagesHeader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProjectsPages/ProjectPagesHeader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Education.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Education.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProjectsPages/cryptoMLtrader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectsPages/cryptoMLtrader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProjectsPages/cryptocurrencyDataScraper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectsPages/cryptocurrencyDataScraper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProjectsPages/cryptocurrencyWallet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectsPages/cryptocurrencyWallet.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProjectsPages/radii.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectsPages/radii.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProjectsPages/wheelthere.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectsPages/wheelthere.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/ProjectImages/CryptoMLPredictionTrader/CryptoMLPredictionTrader1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/ProjectImages/cryptoMLPredictionTrader/cryptoMLPredictionTrader1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/ProjectImages/CryptoMLPredictionTrader/CryptoMLPredictionTrader2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/ProjectImages/CryptoMLPredictionTrader/CryptoMLPredictionTrader3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/ProjectImages/cryptoMLPredictionTrader/cryptoMLPredictionTrader3.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -74,42 +68,32 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="26" />
+          <entry key="css" value="1" />
+          <entry key="js" value="30" />
           <entry key="png" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CSS" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JavaScript" value="26" />
+          <entry key="JavaScript" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="1185" />
+          <entry key="js" value="1613" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="1185" />
+          <entry key="JavaScript" value="1613" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="24" column="90" lean-forward="true" selection-start-line="24" selection-start-column="90" selection-end-line="24" selection-end-column="90" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -125,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Projects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+            <state relative-caret-position="69">
+              <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -137,8 +121,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ProjectsPages/cryptocurrencyDataScraper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="9" column="12" selection-start-line="7" selection-start-column="16" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="161">
+              <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ProjectsPages/cryptoMLtrader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ProjectsPages/ProjectPagesHeader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/ProjectsPages/ProjectPagesHeader.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Contact.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,17 +178,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ProjectsPages/cryptocurrencyWallet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/ProjectsPages/radii.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="106" selection-start-line="13" selection-start-column="106" selection-end-line="13" selection-end-column="106" />
+            <state relative-caret-position="276">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,8 +190,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ProjectsPages/wheelthere.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+            <state relative-caret-position="322">
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ProjectsPages/radii.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -175,8 +216,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -209,10 +250,12 @@
         <option value="$PROJECT_DIR$/src/components/Education.js" />
         <option value="$PROJECT_DIR$/src/components/Projects.js" />
         <option value="$PROJECT_DIR$/src/components/ProjectsPages/cryptocurrencyDataScraper.js" />
-        <option value="$PROJECT_DIR$/src/components/ProjectsPages/cryptocurrencyWallet.js" />
-        <option value="$PROJECT_DIR$/src/components/ProjectsPages/cryptoMLtrader.js" />
         <option value="$PROJECT_DIR$/src/components/ProjectsPages/wheelthere.js" />
         <option value="$PROJECT_DIR$/src/components/ProjectsPages/radii.js" />
+        <option value="$PROJECT_DIR$/src/components/ProjectsPages/cryptocurrencyWallet.js" />
+        <option value="$PROJECT_DIR$/src/components/ProjectsPages/cryptoMLtrader.js" />
+        <option value="$PROJECT_DIR$/src/components/ProjectsPages/ProjectPagesHeader.js" />
+        <option value="$PROJECT_DIR$/src/components/ProjectsPages/ProjectPagesHeader.css" />
       </list>
     </option>
   </component>
@@ -276,53 +319,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="portfoliowebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfoliowebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="ProjectImages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfoliowebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfoliowebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="ProjectImages" type="462c0819:PsiDirectoryNode" />
-              <item name="cryptocurrencywallet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfoliowebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfoliowebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="ProjectImages" type="462c0819:PsiDirectoryNode" />
-              <item name="cryptoMLPredictionTrader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfoliowebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfoliowebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="ProjectImages" type="462c0819:PsiDirectoryNode" />
-              <item name="dataScraper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfoliowebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfoliowebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="ProjectImages" type="462c0819:PsiDirectoryNode" />
-              <item name="radii" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfoliowebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfoliowebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="ProjectImages" type="462c0819:PsiDirectoryNode" />
-              <item name="wheelthere" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -379,12 +375,12 @@
       <option name="presentableId" value="Default" />
       <updated>1579334458702</updated>
       <workItem from="1579334460573" duration="10366000" />
-      <workItem from="1579348513795" duration="12172000" />
+      <workItem from="1579348513795" duration="13691000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22538000" />
+    <option name="totallyTimeSpent" value="24057000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -403,8 +399,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32884902" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32884902" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50039715" side_tool="true" weight="0.33183858" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49960285" weight="0.32884902" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -448,16 +444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="100" selection-start-line="100" selection-end-line="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Contact.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -517,10 +503,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/ProjectImages/cryptoMLPredictionTrader/cryptoMLPredictionTrader3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Projects.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+        <state relative-caret-position="69">
+          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ProjectsPages/radii.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ProjectsPages/wheelthere.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ProjectsPages/cryptocurrencyWallet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -529,39 +558,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ProjectsPages/cryptocurrencyDataScraper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="9" column="12" selection-start-line="7" selection-start-column="16" selection-end-line="9" selection-end-column="12" />
+        <state relative-caret-position="161">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/ProjectImages/cryptoMLPredictionTrader/cryptoMLPredictionTrader3.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ProjectsPages/cryptoMLtrader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="184">
+          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ProjectsPages/wheelthere.js">
+    <entry file="file://$PROJECT_DIR$/src/components/ProjectsPages/ProjectPagesHeader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        <state relative-caret-position="161">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ProjectsPages/cryptocurrencyWallet.js">
+    <entry file="file://$PROJECT_DIR$/src/components/ProjectsPages/ProjectPagesHeader.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ProjectsPages/radii.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="106" selection-start-line="13" selection-start-column="106" selection-end-line="13" selection-end-column="106" />
+        <state relative-caret-position="558">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>

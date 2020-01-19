@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import Projects from '../Projects'
 class cryptocurrencyWallet extends Component{
     render(){
         return(
@@ -10,6 +10,7 @@ class cryptocurrencyWallet extends Component{
                 <img style={style.projImages} alt="" src={require('../../images/ProjectImages/cryptocurrencywallet/cryptocurrencywallet3-1.png')}/>
                 <img style={style.projImages} alt="" src={require('../../images/ProjectImages/cryptocurrencywallet/cryptocurrencywallet4-1.png')}/>
                 <img style={style.projImages} alt="" src={require('../../images/ProjectImages/cryptocurrencywallet/cryptocurrencywallet5-1.png')}/>
+                <Projects/>
             </div>
         )
     }

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import Projects from '../Projects'
 class radii extends Component{
     render(){
         return(
@@ -12,6 +12,7 @@ class radii extends Component{
                 <img style={style.projImages} alt="" src={require('../../images/ProjectImages/radii/radii5-1.png')}/>
                 <img style={style.projImages} alt="" src={require('../../images/ProjectImages/radii/radii6-1.png')}/>
                 <img style={style.projImages} alt="" src={require('../../images/ProjectImages/radii/radii7-1.png')}/>
+                <Projects/>
             </div>
         )
     }

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import Projects from '../Projects'
 class cryptocurrencyDataScraper extends Component{
     render(){
         return(
@@ -7,6 +7,7 @@ class cryptocurrencyDataScraper extends Component{
                 cryptocurrencyDataScraper
                 <img style={style.projImages} alt="" src={require('../../images/ProjectImages/dataScraper/datascraper1.jpg')}/>
                 <img style={style.projImages} alt="" src={require('../../images/ProjectImages/dataScraper/datascraper2.jpeg')}/>
+                <Projects/>
             </div>
         )
     }
