@@ -6,7 +6,7 @@ class Contact extends Component{
         return(
             <div style={{display: 'flex', flexDirection:'column', alignItems:'center', justifyContents:'center', paddingBottom:50}}>
                 <h1> Contact </h1>
-                <h1> david8147@berkeley.edu </h1>
+
                 <div style={{display: 'flex', flexDirection:'row'}}>
                     <a  href={"https://github.com/david8147"}  target="_blank">
                         <img alt="" src={githubImage}
@@ -20,6 +20,7 @@ class Contact extends Component{
                             [Resume]
                         </div>
                     </a>
+                    <p> david8147@berkeley.edu </p>
                 </div>
             </div>
         )

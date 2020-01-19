@@ -6,7 +6,7 @@ class Projects extends Component{
             <div style={{display:'flex', flexDirection:'column', justifyContents:'center', alignItems:'center'}}>
                 <h1>Projects</h1>
                 <div style={{display:'flex', flexDirection:'row', justifyContents:'center', alignItems:'center'}}>
-                    <Link to='./cryptoMLtrader' className="Link" target="_blank">
+                    <Link to='./cryptoMLtrader' className="Link" target="_top">
                         <div style={style.text}>
                             <img style={style.projImages} alt="" src={require('../images/ProjectImages/cryptoMLPredictionTrader/cryptoMLPredictionTrader1.png')}/>
                             <p>cryptoMLtrader</p>
@@ -34,7 +34,7 @@ class Projects extends Component{
                     </Link>
                     <Link to='./DataScraper' className="Link" target="_blank">
                         <div style={style.text}>
-                            <img style={style.projImages} alt="" src={require('../images/ProjectImages/dataScraper/datascraper1.jpg')}/>
+                            <img style={style.projImages} alt="" src={require('../images/ProjectImages/dataScraper/datascraper3.png')}/>
                             <p>DataScraper</p>
                         </div>
                     </Link>
