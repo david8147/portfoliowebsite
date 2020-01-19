@@ -20,9 +20,9 @@ class App extends Component{
         return(
             <BrowserRouter>
                 <div>
-                    <Route exact={true} path="/" component={Home}/>
+                    <Route exact={true} path='/' component={Home}/>
                     <Route path='/cryptoMLtrader' component={cryptoMLtrader}/>
-                    <Route path='/cryptocurrencyWallet' component={cryptocurrencyWallet}/>'
+                    <Route path='/cryptocurrencyWallet' component={cryptocurrencyWallet}/>
                     <Route path='/radii' component={radii}/>
                     <Route path='/wheelthere' component={wheelthere}/>
                     <Route path='/DataScraper' component={cryptocurrencyDataScraper}/>

@@ -44,7 +44,7 @@ class Home extends Component{
             </div>,
             <div key="6" className="MenuContainer" onClick={() => scrollToComponent(this.SIXTH, {offset: 0, align: 'top', duration: 1500})}>
                 <span className="MenuItem">Contact</span>
-            </div>,
+            </div>
         ];
         return (
             <Menu right width={'20%'} styles={styles}>
@@ -61,24 +61,24 @@ class Home extends Component{
                 <div style={{ height:80}}/>
                 <section
                     ref={(section) => {
-                    this.FIRST = section;
-                }}>
+                        this.FIRST = section;
+                    }}>
                 </section>
                 <Front />
                 <Transition height='200px' from="#388E3C" to="#981703" position={0.5}/>
                 <section
                     ref={(section) => {
-                    this.SECOND = section;
-                }}>
+                        this.SECOND = section;
+                    }}>
                 </section>
                 <Projects/>
-                <Transition from="#981703" to="#301732" />
+                <Transition height='200px' from="#981703" to="#301732" />
                 <section ref={(section) => {
                     this.THIRD = section;
                 }}>
                 </section>
                 <Education/>
-                <Transition height='100px' from="#0D47A1" to="#388E3C" />
+                <Transition height='200px' from="#0D47A1" to="#388E3C" />
                 <section ref={(section) => {
                     this.FOURTH = section;
                 }}>
@@ -96,7 +96,6 @@ class Home extends Component{
                 }}>
                 </section>
                 <Contact/>
-
             </AnimatedBg>
         )
     }
