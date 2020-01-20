@@ -14,6 +14,9 @@ import ReactRevealText from "react-reveal-text";
 import scrollToComponent from 'react-scroll-to-component';
 import ScrollingColorBackground from 'react-scrolling-color-background'
 import { AnimatedBg, Transition } from 'scroll-background';
+import Particles from 'react-particles-js';
+
+import deer from "./small-deer.2a0425af.svg";
 
 class Home extends Component{
     constructor(props){
@@ -54,9 +57,85 @@ class Home extends Component{
         );
 
     }
+
     render(){
         return(
             <AnimatedBg>
+                    <Particles
+                        style={{position:'absolute'}}
+                        height={window.innerHeight*5}
+                        params={{
+                            particles: {
+                                number: {
+                                    value: 70,
+                                    density: {
+                                        enable: true,
+                                        value_area: 800
+                                    }
+                                },
+                                color: {
+                                    value: "#e3e022"
+                                },
+                                shape: {
+                                    type: "circle",
+                                    stroke: {
+                                        width: 0,
+                                        color: "#000000"
+                                    },
+                                    polygon: {
+                                        nb_sides: 10
+                                    },
+                                    image: {
+                                        src: "img/github.svg",
+                                        width: 1000,
+                                        height: 1000
+                                    }
+                                },
+                                size: {
+                                    value: 3,
+                                    random: true,
+                                    anim: {
+                                        enable: false,
+                                        speed: 2,
+                                        size_min: 0.1,
+                                        sync: false
+                                    }
+                                },
+                                line_linked: {
+                                    enable: true,
+                                    distance: 20,
+                                    color: "#e3e022",
+                                    opacity: 0.9,
+                                    width: 2
+                                },
+                                move: {
+                                    enable: true,
+                                    speed: 2,
+                                    direction: "none",
+                                    random: false,
+                                    straight: false,
+                                    out_mode: "out",
+                                    bounce: false,
+                                    attract: {
+                                        enable: false,
+                                        rotateX: 600,
+                                        rotateY: 1200
+                                    }
+                                }
+                            },
+
+                            interactivity: {
+                                events: {
+                                    onhover: {
+                                        enable: true,
+                                        mode: "repulse"
+                                    }
+                                }
+                            },
+
+                            "retina_detect": true
+                        }}
+                    />
                 {this.getMenu()}
                 <div style={{ height:80}}/>
                 <section
@@ -64,21 +143,26 @@ class Home extends Component{
                         this.FIRST = section;
                     }}>
                 </section>
-                <Front />
-                <Transition height='200px' from="#388E3C" to="#981703" position={0.5}/>
+                <Fade>
+                    <Front />
+                </Fade>
+                <Transition height='200px' from="#080252" to="#000080" position={0.5}/>
                 <section
                     ref={(section) => {
                         this.SECOND = section;
                     }}>
                 </section>
-                <Projects/>
-                <Transition height='200px' from="#981703" to="#301732" />
+                <Fade up>
+                    <Projects />
+                </Fade>
+
+                {/*<Transition height='200px' from="#981703" to="#301732" />*/}
                 <section ref={(section) => {
                     this.THIRD = section;
                 }}>
                 </section>
                 <Education/>
-                <Transition height='200px' from="#0D47A1" to="#388E3C" />
+                {/*<Transition height='200px' from="#0D47A1" to="#388E3C" />*/}
                 <section ref={(section) => {
                     this.FOURTH = section;
                 }}>
@@ -100,6 +184,130 @@ class Home extends Component{
         )
     }
 }
+
+
+
+
+//<div style={{background:'linear-gradient(70deg, #FF512F, #F09819)', zIndex:-10}}>
+//                     <Particles
+//                         style={{position:'absolute', zIndex:0}}
+//                         height={window.innerHeight*5}
+//                         params={{
+//                             particles: {
+//                                 number: {
+//                                     value: 70,
+//                                     density: {
+//                                         enable: true,
+//                                         value_area: 800
+//                                     }
+//                                 },
+//                                 color: {
+//                                     value: "#000"
+//                                 },
+//                                 shape: {
+//                                     type: "circle",
+//                                     stroke: {
+//                                         width: 0,
+//                                         color: "#000000"
+//                                     },
+//                                     polygon: {
+//                                         nb_sides: 10
+//                                     },
+//                                     image: {
+//                                         src: "img/github.svg",
+//                                         width: 1000,
+//                                         height: 1000
+//                                     }
+//                                 },
+//                                 size: {
+//                                     value: 3,
+//                                     random: true,
+//                                     anim: {
+//                                         enable: false,
+//                                         speed: 2,
+//                                         size_min: 0.1,
+//                                         sync: false
+//                                     }
+//                                 },
+//                                 line_linked: {
+//                                     enable: true,
+//                                     distance: 20,
+//                                     color: "#e3e022",
+//                                     opacity: 0.9,
+//                                     width: 2
+//                                 },
+//                                 move: {
+//                                     enable: true,
+//                                     speed: 2,
+//                                     direction: "none",
+//                                     random: false,
+//                                     straight: false,
+//                                     out_mode: "out",
+//                                     bounce: false,
+//                                     attract: {
+//                                         enable: false,
+//                                         rotateX: 600,
+//                                         rotateY: 1200
+//                                     }
+//                                 }
+//                             },
+//
+//                             interactivity: {
+//                                 events: {
+//                                     onhover: {
+//                                         enable: true,
+//                                         mode: "repulse"
+//                                     }
+//                                 }
+//                             },
+//
+//                             "retina_detect": true
+//                         }}
+//                     />
+//                     <div style={{zIndex:0}}>
+//                         {this.getMenu()}
+//                         <div style={{ height:80}}/>
+//                         <section
+//                             ref={(section) => {
+//                                 this.FIRST = section;
+//                             }}>
+//                         </section>
+//                         <Front />
+//
+//                         <section
+//                             ref={(section) => {
+//                                 this.SECOND = section;
+//                             }}>
+//                         </section>
+//                         <Projects />
+//                         <section ref={(section) => {
+//                             this.THIRD = section;
+//                         }}>
+//                         </section>
+//                         <Education/>
+//                         <section ref={(section) => {
+//                             this.FOURTH = section;
+//                         }}>
+//                         </section>
+//                         <RelevantCourses/>
+//
+//                         <section ref={(section) => {
+//                             this.FIFTH = section;
+//                         }}>
+//                         </section>
+//                         <Skills/>
+//
+//                         <section ref={(section) => {
+//                             this.SIXTH = section;
+//                         }}>
+//                         </section>
+//                         <Contact/>
+//                     </div>
+//
+//                 </div>
+
+
+
 let styles = {
     bmBurgerButton: {
         position: 'absolute',

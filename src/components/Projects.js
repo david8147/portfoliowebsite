@@ -1,17 +1,21 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom'
+import Fade from 'react-reveal/Fade';
+
 class Projects extends Component{
     render(){
         return(
             <div style={{display:'flex', flexDirection:'column', justifyContents:'center', alignItems:'center'}}>
                 <h1>Projects</h1>
                 <div style={{display:'flex', flexDirection:'row', justifyContents:'center', alignItems:'center'}}>
-                    <Link to='./cryptoMLtrader' className="Link" target="_top">
-                        <div style={style.text}>
-                            <img style={style.projImages} alt="" src={require('../images/ProjectImages/cryptoMLPredictionTrader/cryptoMLPredictionTrader1.png')}/>
-                            <p>cryptoMLtrader</p>
-                        </div>
-                    </Link>
+                    <Fade up>
+                        <Link to='./cryptoMLtrader' className="Link" target="_top">
+                            <div style={style.text}>
+                                <img style={style.projImages} alt="" src={require('../images/ProjectImages/cryptoMLPredictionTrader/cryptoMLPredictionTrader1.png')}/>
+                                <p>cryptoMLtrader</p>
+                            </div>
+                        </Link>
+                    </Fade>
                     <Link to='./cryptocurrencyWallet' className="Link" target="_top">
                         <div style={style.text}>
                             <img style={style.projImages} alt="" src={require('../images/ProjectImages/cryptocurrencywallet/cryptocurrencywallet1-1.png')}/>
