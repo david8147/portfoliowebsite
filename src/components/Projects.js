@@ -12,13 +12,13 @@ class Projects extends Component{
                             <p>cryptoMLtrader</p>
                         </div>
                     </Link>
-                    <Link to='./cryptocurrencyWallet' className="Link" target="_blank">
+                    <Link to='./cryptocurrencyWallet' className="Link" target="_top">
                         <div style={style.text}>
                             <img style={style.projImages} alt="" src={require('../images/ProjectImages/cryptocurrencywallet/cryptocurrencywallet1-1.png')}/>
                             <p>cryptocurrencyWallet</p>
                         </div>
                     </Link>
-                    <Link to='./radii' className="Link" target="_blank">
+                    <Link to='./radii' className="Link" target="_top">
                         <div style={style.text}>
                             <img style={style.projImages} alt="" src={require('../images/ProjectImages/radii/radii1-1.png')}/>
                             <p>radii</p>
@@ -26,13 +26,13 @@ class Projects extends Component{
                     </Link>
                 </div>
                 <div style={{display:'flex', flexDirection:'row', justifyContents:'center', alignItems:'center'}}>
-                    <Link to='./wheelthere' className="Link" target="_blank">
+                    <Link to='./wheelthere' className="Link" target="_top">
                         <div style={style.text}>
                             <img style={style.projImages} alt="" src={require('../images/ProjectImages/wheelthere/wheelthere1.png')}/>
                             <p>wheelthere</p>
                         </div>
                     </Link>
-                    <Link to='./DataScraper' className="Link" target="_blank">
+                    <Link to='./DataScraper' className="Link" target="_top">
                         <div style={style.text}>
                             <img style={style.projImages} alt="" src={require('../images/ProjectImages/dataScraper/datascraper3.png')}/>
                             <p>DataScraper</p>
