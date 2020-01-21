@@ -1,4 +1,5 @@
-import React,{Component} from 'react';
+import React,{Component, useState} from 'react';
+import { useSpring, animated } from 'react-spring'
 
 import Front from './Front'
 import RelevantCourses from './RelevantCourses'
@@ -6,6 +7,9 @@ import Skills from './Skills'
 import Contact from './Contact'
 import Education from './Education'
 import Projects from './Projects'
+
+import Component1 from './Component1'
+import Component2 from './Component2'
 
 import Fade from 'react-reveal/Fade';
 import  { slide as Menu}  from 'react-burger-menu'
@@ -16,14 +20,27 @@ import ScrollingColorBackground from 'react-scrolling-color-background'
 import { AnimatedBg, Transition } from 'scroll-background';
 import Particles from 'react-particles-js';
 
-import deer from "./small-deer.2a0425af.svg";
 
 class Home extends Component{
     constructor(props){
         super(props);
         this.state={
             open:false,
+            open1:true,
+            open2: false,
         }
+    }
+    componentDidMount(){
+        setTimeout(() => {
+            this.setState({open1:false})
+        }, 3000);
+        setTimeout(() => {
+            this.setState({open2:true})
+        }, 5000);
+        setTimeout(() => {
+            this.setState({open2: false, open3:true})
+        }, 7000);
+
     }
     getMenu() {
         // const Menu = BurgerMenu['pushRotate'];
@@ -60,7 +77,18 @@ class Home extends Component{
 
     render(){
         return(
-            <AnimatedBg>
+            <div >
+                {this.state.open1 &&
+                <div style={{height: window.innerHeight, width:window.innerWidth}}>
+                    <Component2/>
+                </div>}
+                {this.state.open2 &&
+                <div style={{height: window.innerHeight, width:window.innerWidth}}>
+                    <Component1/>
+                </div>}
+
+                {this.state.open3 &&
+                <AnimatedBg >
                     <Particles
                         style={{position:'absolute'}}
                         height={window.innerHeight*5}
@@ -136,51 +164,52 @@ class Home extends Component{
                             "retina_detect": true
                         }}
                     />
-                {this.getMenu()}
-                <div style={{ height:80}}/>
-                <section
-                    ref={(section) => {
-                        this.FIRST = section;
+                    {this.getMenu()}
+                    <div style={{ height:80}}/>
+                    <section
+                        ref={(section) => {
+                            this.FIRST = section;
+                        }}>
+                    </section>
+                    <Fade>
+                        <Front />
+                    </Fade>
+                    <Transition height='200px' from="#080252" to="#000080" position={0.5}/>
+                    <section
+                        ref={(section) => {
+                            this.SECOND = section;
+                        }}>
+                    </section>
+                    <Fade up>
+                        <Projects />
+                    </Fade>
+
+                    {/*<Transition height='200px' from="#981703" to="#301732" />*/}
+                    <section ref={(section) => {
+                        this.THIRD = section;
                     }}>
-                </section>
-                <Fade>
-                    <Front />
-                </Fade>
-                <Transition height='200px' from="#080252" to="#000080" position={0.5}/>
-                <section
-                    ref={(section) => {
-                        this.SECOND = section;
+                    </section>
+                    <Education/>
+                    {/*<Transition height='200px' from="#0D47A1" to="#388E3C" />*/}
+                    <section ref={(section) => {
+                        this.FOURTH = section;
                     }}>
-                </section>
-                <Fade up>
-                    <Projects />
-                </Fade>
+                    </section>
+                    <RelevantCourses/>
 
-                {/*<Transition height='200px' from="#981703" to="#301732" />*/}
-                <section ref={(section) => {
-                    this.THIRD = section;
-                }}>
-                </section>
-                <Education/>
-                {/*<Transition height='200px' from="#0D47A1" to="#388E3C" />*/}
-                <section ref={(section) => {
-                    this.FOURTH = section;
-                }}>
-                </section>
-                <RelevantCourses/>
+                    <section ref={(section) => {
+                        this.FIFTH = section;
+                    }}>
+                    </section>
+                    <Skills/>
 
-                <section ref={(section) => {
-                    this.FIFTH = section;
-                }}>
-                </section>
-                <Skills/>
-
-                <section ref={(section) => {
-                    this.SIXTH = section;
-                }}>
-                </section>
-                <Contact/>
-            </AnimatedBg>
+                    <section ref={(section) => {
+                        this.SIXTH = section;
+                    }}>
+                    </section>
+                    <Contact/>
+                </AnimatedBg>}
+            </div>
         )
     }
 }

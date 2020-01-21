@@ -8,6 +8,8 @@ import cryptoMLtrader from './components/ProjectsPages/cryptoMLtrader'
 import radii from './components/ProjectsPages/radii'
 import wheelthere from './components/ProjectsPages/wheelthere'
 
+// import Main from './components/Main'
+
 class App extends Component{
     constructor(props){
         super(props);
