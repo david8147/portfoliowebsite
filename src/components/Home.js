@@ -10,6 +10,9 @@ import Projects from './Projects'
 
 import Component1 from './Component1'
 import Component2 from './Component2'
+import Component3 from './Component3'
+import Component4 from './Component4'
+
 
 import Fade from 'react-reveal/Fade';
 import  { slide as Menu}  from 'react-burger-menu'
@@ -33,7 +36,7 @@ class Home extends Component{
     componentDidMount(){
         setTimeout(() => {
             this.setState({open1:false})
-        }, 3000);
+        }, 5000);
         setTimeout(() => {
             this.setState({open2:true})
         }, 5000);
@@ -79,9 +82,8 @@ class Home extends Component{
         return(
             <div >
                 {this.state.open1 &&
-                <div style={{height: window.innerHeight, width:window.innerWidth}}>
-                    <Component2/>
-                </div>}
+                <Component4/>
+                }
                 {this.state.open2 &&
                 <div style={{height: window.innerHeight, width:window.innerWidth}}>
                     <Component1/>
