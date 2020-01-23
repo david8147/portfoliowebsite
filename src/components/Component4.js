@@ -1,13 +1,19 @@
 import React from 'react';
 import './styles.scss';
+import {useSpring, animated} from "react-spring";
 
-function Component4() {
+export default function Component4() {
+    // const props = useSpring({
+    //     from: { opacity: 1},
+    //     to:{opacity: 0},
+    //     config: { duration: 5000 }
+    // })
     return (
-        <div>
+        <animated.div >
             <div>
                 <div className="splash">
                     <div className="splash_logo">
-                        BJL
+                        DW
                     </div>
                     <div className="splash_svg">
                         <svg width="100%" height="100%">
@@ -21,14 +27,13 @@ function Component4() {
                     </div>
                 </div>
                 <div className="text">
-                    <p>Duis quis</p>
-                    <p>nec sapien</p>
-                    <button>More</button>
+                    <p>Welcome</p>
+                    <p>        :)</p>
                 </div>
             </div>
 
-        </div>
+        </animated.div>
     );
 }
 
-export default Component4;
+

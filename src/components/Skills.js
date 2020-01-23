@@ -110,19 +110,21 @@ class Skills extends Component{
         const graphHeightPixels = 300;
         return(
             <div style={{display:'flex', flexDirection:'column', alignItems:'center', height:600}}>
-                <h1>Skills</h1>
+                <h1 style={{color:'yellow', textDecoration: 'underline'}}>SKILLS</h1>
                 <div className="FullGraph">
 
                     <div className="BarsGraph">
                         <div className="Bars">
-                            <div className="YAxis">
-                                <h3 className="YValue">Wizard</h3>
-                                <h3 className="YValue">85 Decibel keyboard clacks</h3>
-                                <h3 className="YValue">Comfortable</h3>
-                                <h3 className="YValue">Competent</h3>
-                                <h3 className="YValue">Dog inherits from Animal</h3>
-                                <h3 className="YValue">Saw it once in a dream</h3>
-                            </div>
+                            <Fade>
+                                <div className="YAxis">
+                                    <h3 className="YValue">Wizard</h3>
+                                    <h3 className="YValue">85 Decibel keyboard clacks</h3>
+                                    <h3 className="YValue">Comfortable</h3>
+                                    <h3 className="YValue">Competent</h3>
+                                    <h3 className="YValue">Dog inherits from Animal</h3>
+                                    <h3 className="YValue">Saw it once in a dream</h3>
+                                </div>
+                            </Fade>
 
                             {skills.map((skill) =>
                                 <div key={skill.Name} className="Bar">

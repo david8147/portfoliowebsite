@@ -5,61 +5,94 @@ import Fade from 'react-reveal/Fade';
 class Projects extends Component{
     render(){
         return(
-            <div style={{display:'flex', flexDirection:'column', justifyContents:'center', alignItems:'center'}}>
-                <h1>Projects</h1>
+            <div style={{display:'flex', flexDirection:'column', justifyContents:'center', alignItems:'center', width:'60%'}}>
+                <h1 style={{color:'yellow', marginBottom:50, textDecoration: 'underline'}}>PROJECTS</h1>
                 <div style={{display:'flex', flexDirection:'row', justifyContents:'center', alignItems:'center'}}>
-                    <Fade up>
-                        <Link to='./cryptoMLtrader' className="Link" target="_top">
-                            <div style={style.text}>
-                                <img style={style.projImages} alt="" src={require('../images/ProjectImages/cryptoMLPredictionTrader/cryptoMLPredictionTrader1.png')}/>
-                                <p>cryptoMLtrader</p>
-                            </div>
-                        </Link>
+                    <Fade left>
+                        <div style={style.text}>
+                            <Link style={{textDecoration: 'inherit'}} to='./cryptocurrencyWallet' className="Link" target="_top">
+                                <img style={style.projImagesReactNative} alt="" src={require('../images/ProjectImages/cryptocurrencywallet/cryptocurrencywallet1-1.png')}/>
+                                <div style={{display:'flex', flexDirection:'column', justifyContents:'center', alignItems:'center'}}>
+                                    <p style={{textDecoration: 'none', color:'white', margin:0}}>CryptocurrencyWallet</p>
+                                    <p style={{textDecoration: 'none', color:'#c334eb', margin:0}}>[React-Native]</p>
+                                </div>
+                            </Link>
+                        </div>
                     </Fade>
-                    <Link to='./cryptocurrencyWallet' className="Link" target="_top">
+                    <Fade right>
                         <div style={style.text}>
-                            <img style={style.projImages} alt="" src={require('../images/ProjectImages/cryptocurrencywallet/cryptocurrencywallet1-1.png')}/>
-                            <p>cryptocurrencyWallet</p>
+                            <Link style={{textDecoration: 'inherit'}} to='./radii' className="Link" target="_top">
+                                <img style={style.projImagesReactNative} alt="" src={require('../images/ProjectImages/radii/radii1-1.png')}/>
+                                <div style={{display:'flex', flexDirection:'column', justifyContents:'center', alignItems:'center'}}>
+                                    <p style={{textDecoration: 'none', color:'white', margin:0}}>Radii</p>
+                                    <p style={{textDecoration: 'none', color:'#c334eb', margin:0}}>[React-Native]</p>
+                                </div>
+                            </Link>
                         </div>
-                    </Link>
-                    <Link to='./radii' className="Link" target="_top">
-                        <div style={style.text}>
-                            <img style={style.projImages} alt="" src={require('../images/ProjectImages/radii/radii1-1.png')}/>
-                            <p>radii</p>
-                        </div>
-                    </Link>
+                    </Fade>
                 </div>
-                <div style={{display:'flex', flexDirection:'row', justifyContents:'center', alignItems:'center'}}>
-                    <Link to='./wheelthere' className="Link" target="_top">
+                <Fade left>
+                    <div style={{display:'flex', flexDirection:'row', justifyContents:'center', alignItems:'center'}}>
                         <div style={style.text}>
-                            <img style={style.projImages} alt="" src={require('../images/ProjectImages/wheelthere/wheelthere1.png')}/>
-                            <p>wheelthere</p>
+                            <Link style={{textDecoration: 'inherit'}} to='./cryptoMLtrader' className="Link" target="_top">
+                                <img style={style.projImages} alt="" src={require('../images/ProjectImages/cryptoMLPredictionTrader/cryptoMLPredictionTrader1.png')}/>
+                                <div style={{display:'flex', flexDirection:'column', justifyContents:'center', alignItems:'center'}}>
+                                    <p style={{textDecoration: 'none', color:'white', margin:0}}>CryptoMLTrader</p>
+                                    <p style={{textDecoration: 'none', color:'#03d3fc', margin:0}}>[Python]</p>
+                                </div>
+                            </Link>
                         </div>
-                    </Link>
-                    <Link to='./DataScraper' className="Link" target="_top">
+                    </div>
+                </Fade>
+                <Fade right>
+                    <div style={{display:'flex', flexDirection:'row', justifyContents:'center', alignItems:'center'}}>
                         <div style={style.text}>
-                            <img style={style.projImages} alt="" src={require('../images/ProjectImages/dataScraper/datascraper3.png')}/>
-                            <p>DataScraper</p>
+                            <Link style={{textDecoration: 'inherit'}} to='./wheelthere' className="Link" target="_top">
+                                <img style={style.projImages} alt="" src={require('../images/ProjectImages/wheelthere/wheelthere1.png')}/>
+                                <div style={{display:'flex', flexDirection:'column', justifyContents:'center', alignItems:'center'}}>
+                                    <p style={{textDecoration: 'none', color:'white', margin:0}}>Wheelthere</p>
+                                    <p style={{textDecoration: 'none', color:'#fc0328', margin:0}}>[React]</p>
+                                </div>
+                            </Link>
                         </div>
-                    </Link>
-                </div>
+                    </div>
+                </Fade>
+                <Fade left>
+                    <div style={{display:'flex', flexDirection:'row', justifyContents:'center', alignItems:'center'}}>
+                        <div style={style.text}>
+                            <Link style={{textDecoration: 'inherit'}} to='./DataScraper' className="Link" target="_top">
+                                <img style={style.projImages} alt="" src={require('../images/ProjectImages/dataScraper/datascraper3.png')}/>
+                                <div style={{display:'flex', flexDirection:'column', justifyContents:'center', alignItems:'center'}}>
+                                    <p style={{textDecoration: 'none', color:'white', margin:0, marginTop:20}}>DataScraper</p>
+                                    <p style={{textDecoration: 'none', color:'#03d3fc', margin:0}}>[Python]</p>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                </Fade>
             </div>
 
         )
     }
 }
+
+
 const style = {
    projImages:{
        height:'100%',
        width:'100%',
-
+       marginBottom:-40,
    },
     text:{
-       display:'flex',
+        display:'flex',
         flexDirection:'column',
         justifyContents:'center',
         alignItems:'center',
         padding:20,
+    },
+    projImagesReactNative:{
+        height: '80vh',
+        width:'20vw',
     }
 }
 export default Projects;

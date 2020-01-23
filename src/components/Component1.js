@@ -8,7 +8,7 @@ export default function Component1() {
         from: { left: '0%', top: '0%', width: '0%', height: '0%', background: 'lightgreen' },
         to: async next => {
             while (1) {
-                await next({ left: '0%', top: '0%', width: '100%', height: '100%', background: 'lightblue' })
+                await next({ left: '0%', top: '0%', width: '100%', height: '100%', background: 'yellow' })
                 await next({ height: '50%', background: 'lightgreen' })
                 await next({ width: '50%', left: '50%', background: 'lightgoldenrodyellow' })
                 await next({ top: '0%', height: '100%', background: 'lightpink' })

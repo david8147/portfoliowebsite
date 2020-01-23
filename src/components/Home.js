@@ -8,8 +8,8 @@ import Contact from './Contact'
 import Education from './Education'
 import Projects from './Projects'
 
-import Component1 from './Component1'
-import Component2 from './Component2'
+// import Component1 from './Component1'
+// import Component2 from './Component2'
 import Component3 from './Component3'
 import Component4 from './Component4'
 
@@ -30,19 +30,29 @@ class Home extends Component{
         this.state={
             open:false,
             open1:true,
-            open2: false,
+            open2: true,
+            open3:false,
+            mainColor:'#f5d300'
         }
     }
     componentDidMount(){
         setTimeout(() => {
-            this.setState({open1:false})
-        }, 5000);
-        setTimeout(() => {
-            this.setState({open2:true})
-        }, 5000);
-        setTimeout(() => {
-            this.setState({open2: false, open3:true})
-        }, 7000);
+            this.setState({open1:false, open3:true, open2:true,}, ()=>{
+                this.changeMainColor();
+            })
+        },1000);
+        // setTimeout(() => {
+        //     this.setState({open2:true})
+        // }, 2000);
+        // setTimeout(() => {
+        //     this.setState({open3:true, open2:false})
+        // }, 7000);
+
+    }
+    changeMainColor=()=>{
+        // setTimeout(() => {
+        //     this.setState({mainColor:'black'})
+        // },1000);
 
     }
     getMenu() {
@@ -77,267 +87,160 @@ class Home extends Component{
         );
 
     }
-
     render(){
         return(
-            <div >
-                {this.state.open1 &&
-                <Component4/>
-                }
-                {this.state.open2 &&
-                <div style={{height: window.innerHeight, width:window.innerWidth}}>
-                    <Component1/>
-                </div>}
+            <div style={{backgroundColor:'#00001c'}}>
+                {this.state.open1 && (
+                    <Fade when={this.state.open2}>
+                        <Component4/>
+                    </Fade>
+                )}
+                {/*{this.state.open2 &&*/}
+                    {/*<div style={{height: window.innerHeight, width:window.innerWidth}}>*/}
+                        {/*<Component3/>*/}
+                    {/*</div>*/}
+                {/*}*/}
 
                 {this.state.open3 &&
-                <AnimatedBg >
-                    <Particles
-                        style={{position:'absolute'}}
-                        height={window.innerHeight*5}
-                        params={{
-                            particles: {
-                                number: {
-                                    value: 70,
-                                    density: {
+                <Fade>
+                    <AnimatedBg >
+                        <Particles
+                            style={{position:'absolute'}}
+                            height={window.innerHeight*7}
+                            params={{
+                                particles: {
+                                    number: {
+                                        value: 70,
+                                        density: {
+                                            enable: true,
+                                            value_area: 800
+                                        }
+                                    },
+                                    color: {
+                                        value: "#e3e022"
+                                    },
+                                    shape: {
+                                        type: "circle",
+                                        stroke: {
+                                            width: 0,
+                                            color: "#000000"
+                                        },
+                                        polygon: {
+                                            nb_sides: 10
+                                        },
+                                        image: {
+                                            src: "img/github.svg",
+                                            width: 1000,
+                                            height: 1000
+                                        }
+                                    },
+                                    size: {
+                                        value: 3,
+                                        random: true,
+                                        anim: {
+                                            enable: false,
+                                            speed: 2,
+                                            size_min: 0.1,
+                                            sync: false
+                                        }
+                                    },
+                                    line_linked: {
                                         enable: true,
-                                        value_area: 800
-                                    }
-                                },
-                                color: {
-                                    value: "#e3e022"
-                                },
-                                shape: {
-                                    type: "circle",
-                                    stroke: {
-                                        width: 0,
-                                        color: "#000000"
+                                        distance: 20,
+                                        color: "#e3e022",
+                                        opacity: 0.9,
+                                        width: 2
                                     },
-                                    polygon: {
-                                        nb_sides: 10
-                                    },
-                                    image: {
-                                        src: "img/github.svg",
-                                        width: 1000,
-                                        height: 1000
-                                    }
-                                },
-                                size: {
-                                    value: 3,
-                                    random: true,
-                                    anim: {
-                                        enable: false,
+                                    move: {
+                                        enable: true,
                                         speed: 2,
-                                        size_min: 0.1,
-                                        sync: false
+                                        direction: "none",
+                                        random: false,
+                                        straight: false,
+                                        out_mode: "out",
+                                        bounce: false,
+                                        attract: {
+                                            enable: false,
+                                            rotateX: 600,
+                                            rotateY: 1200
+                                        }
                                     }
                                 },
-                                line_linked: {
-                                    enable: true,
-                                    distance: 20,
-                                    color: "#e3e022",
-                                    opacity: 0.9,
-                                    width: 2
+
+                                interactivity: {
+                                    events: {
+                                        onhover: {
+                                            enable: true,
+                                            mode: "repulse"
+                                        }
+                                    }
                                 },
-                                move: {
-                                    enable: true,
-                                    speed: 2,
-                                    direction: "none",
-                                    random: false,
-                                    straight: false,
-                                    out_mode: "out",
-                                    bounce: false,
-                                    attract: {
-                                        enable: false,
-                                        rotateX: 600,
-                                        rotateY: 1200
-                                    }
-                                }
-                            },
 
-                            interactivity: {
-                                events: {
-                                    onhover: {
-                                        enable: true,
-                                        mode: "repulse"
-                                    }
-                                }
-                            },
+                                "retina_detect": true
+                            }}
+                        />
+                        {this.getMenu()}
+                        <div style={{height:80}}/>
+                        <section
+                            ref={(section) => {
+                                this.FIRST = section;
+                            }}>
+                        </section>
+                        {/*<Fade>*/}
+                        <div style={{display:'flex', flexDirection:'column', justifyContents:'center', alignItems:'center',}}>
+                            <div style={{display:'flex', flexDirection:'column', justifyContents:'center', alignItems:'center',
+                                width:'100%'}}>
+                                <Front />
+                            </div>
+                        </div>
+                        {/*</Fade>*/}
+                        {/*<Transition height='200px' from="#030024" to="#000080" position={0.5}/>*/}
+                        <section
+                            ref={(section) => {
+                                this.SECOND = section;
+                            }}>
+                        </section>
+                        {/*<Fade>*/}
+                            <div style={{display:'flex', flexDirection:'column', justifyContents:'center', alignItems:'center',}}>
+                                <div style={{display:'flex', flexDirection:'column', justifyContents:'center', alignItems:'center',
+                                    width:'100%'}}>
+                                    <Projects />
+                                </div>
+                            </div>
+                        {/*</Fade>*/}
 
-                            "retina_detect": true
-                        }}
-                    />
-                    {this.getMenu()}
-                    <div style={{ height:80}}/>
-                    <section
-                        ref={(section) => {
-                            this.FIRST = section;
+                        {/*<Transition height='200px' from="#981703" to="#301732" />*/}
+                        <section ref={(section) => {
+                            this.THIRD = section;
                         }}>
-                    </section>
-                    <Fade>
-                        <Front />
-                    </Fade>
-                    <Transition height='200px' from="#080252" to="#000080" position={0.5}/>
-                    <section
-                        ref={(section) => {
-                            this.SECOND = section;
+                        </section>
+                        <Fade>
+                            <Education/>
+                        </Fade>
+                        {/*<Transition height='200px' from="#0D47A1" to="#388E3C" />*/}
+                        <section ref={(section) => {
+                            this.FOURTH = section;
                         }}>
-                    </section>
-                    <Fade up>
-                        <Projects />
-                    </Fade>
+                        </section>
+                        <RelevantCourses/>
 
-                    {/*<Transition height='200px' from="#981703" to="#301732" />*/}
-                    <section ref={(section) => {
-                        this.THIRD = section;
-                    }}>
-                    </section>
-                    <Education/>
-                    {/*<Transition height='200px' from="#0D47A1" to="#388E3C" />*/}
-                    <section ref={(section) => {
-                        this.FOURTH = section;
-                    }}>
-                    </section>
-                    <RelevantCourses/>
+                        <section ref={(section) => {
+                            this.FIFTH = section;
+                        }}>
+                        </section>
+                        <Skills/>
 
-                    <section ref={(section) => {
-                        this.FIFTH = section;
-                    }}>
-                    </section>
-                    <Skills/>
-
-                    <section ref={(section) => {
-                        this.SIXTH = section;
-                    }}>
-                    </section>
-                    <Contact/>
-                </AnimatedBg>}
+                        <section ref={(section) => {
+                            this.SIXTH = section;
+                        }}>
+                        </section>
+                        <Contact/>
+                    </AnimatedBg>
+                </Fade>}
             </div>
         )
     }
 }
-
-
-
-
-//<div style={{background:'linear-gradient(70deg, #FF512F, #F09819)', zIndex:-10}}>
-//                     <Particles
-//                         style={{position:'absolute', zIndex:0}}
-//                         height={window.innerHeight*5}
-//                         params={{
-//                             particles: {
-//                                 number: {
-//                                     value: 70,
-//                                     density: {
-//                                         enable: true,
-//                                         value_area: 800
-//                                     }
-//                                 },
-//                                 color: {
-//                                     value: "#000"
-//                                 },
-//                                 shape: {
-//                                     type: "circle",
-//                                     stroke: {
-//                                         width: 0,
-//                                         color: "#000000"
-//                                     },
-//                                     polygon: {
-//                                         nb_sides: 10
-//                                     },
-//                                     image: {
-//                                         src: "img/github.svg",
-//                                         width: 1000,
-//                                         height: 1000
-//                                     }
-//                                 },
-//                                 size: {
-//                                     value: 3,
-//                                     random: true,
-//                                     anim: {
-//                                         enable: false,
-//                                         speed: 2,
-//                                         size_min: 0.1,
-//                                         sync: false
-//                                     }
-//                                 },
-//                                 line_linked: {
-//                                     enable: true,
-//                                     distance: 20,
-//                                     color: "#e3e022",
-//                                     opacity: 0.9,
-//                                     width: 2
-//                                 },
-//                                 move: {
-//                                     enable: true,
-//                                     speed: 2,
-//                                     direction: "none",
-//                                     random: false,
-//                                     straight: false,
-//                                     out_mode: "out",
-//                                     bounce: false,
-//                                     attract: {
-//                                         enable: false,
-//                                         rotateX: 600,
-//                                         rotateY: 1200
-//                                     }
-//                                 }
-//                             },
-//
-//                             interactivity: {
-//                                 events: {
-//                                     onhover: {
-//                                         enable: true,
-//                                         mode: "repulse"
-//                                     }
-//                                 }
-//                             },
-//
-//                             "retina_detect": true
-//                         }}
-//                     />
-//                     <div style={{zIndex:0}}>
-//                         {this.getMenu()}
-//                         <div style={{ height:80}}/>
-//                         <section
-//                             ref={(section) => {
-//                                 this.FIRST = section;
-//                             }}>
-//                         </section>
-//                         <Front />
-//
-//                         <section
-//                             ref={(section) => {
-//                                 this.SECOND = section;
-//                             }}>
-//                         </section>
-//                         <Projects />
-//                         <section ref={(section) => {
-//                             this.THIRD = section;
-//                         }}>
-//                         </section>
-//                         <Education/>
-//                         <section ref={(section) => {
-//                             this.FOURTH = section;
-//                         }}>
-//                         </section>
-//                         <RelevantCourses/>
-//
-//                         <section ref={(section) => {
-//                             this.FIFTH = section;
-//                         }}>
-//                         </section>
-//                         <Skills/>
-//
-//                         <section ref={(section) => {
-//                             this.SIXTH = section;
-//                         }}>
-//                         </section>
-//                         <Contact/>
-//                     </div>
-//
-//                 </div>
-
-
 
 let styles = {
     bmBurgerButton: {
