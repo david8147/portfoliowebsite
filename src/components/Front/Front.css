@@ -1,0 +1,28 @@
+.FrontText{
+    font-family: News Gothic;
+    font-weight:bold;
+    font-size:50px;
+    color:white;
+    margin-top:15px;
+    margin-bottom:0;
+}
+
+.FrontNameText{
+    font-family: News Gothic;
+    font-weight:bold;
+    font-size:70px;
+    color:white;
+    margin-top:15px;
+    margin-bottom:50px;
+}
+.FrontMovingText{
+    font-family: News Gothic;
+    font-weight:bold;
+    font-size:50px;
+    color:white;
+    margin-top:15px;
+    margin-bottom:0px;
+    display:flex;
+    flex-direction: row;
+
+}

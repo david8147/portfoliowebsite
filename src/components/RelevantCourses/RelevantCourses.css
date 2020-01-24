@@ -1,0 +1,24 @@
+.RelevantCoursesMain{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom:70px;
+
+}
+.RelevantCoursesText{
+    color:yellow;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+.RelevantCoursesLink{
+    text-decoration: none;
+}
+.RelevantCoursesP{
+    text-decoration: inherit;
+    color:white;
+    margin:5px;
+    font-size:23px;
+    font-weight:bold;
+}

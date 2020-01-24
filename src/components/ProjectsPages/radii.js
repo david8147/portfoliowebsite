@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Projects from '../Projects'
+import Projects from '../Projects/Projects'
 import ProjectPagesHeader from "./ProjectPagesHeader";
 import Fade from "react-reveal/Fade";
 import github from "../../images/largegithub.png";

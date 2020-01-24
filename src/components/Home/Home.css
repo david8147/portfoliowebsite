@@ -1,0 +1,50 @@
+.HomeFlexCol{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.HomeFlexColFull{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+.bmBurgerButton {
+    position: absolute;
+    width: 26px;
+    height: 20px;
+    right: 36px;
+    top: 36px;
+}
+.bmBurgerBars {
+    background:white
+}
+.bmCross {
+    background:yellow;
+}
+.bmMenu {
+    background: #00001c;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+.bmItemList {
+    color: white;
+    padding: 0.8em;
+    cursor: pointer;
+}
+.bmOverlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+.bmCrossButton {
+    height: 24px;
+    width: 24px;
+}
+.bmMorphShape{
+    fill:yellow;
+}
+.menuStyle{
+    margin-top:5px;
+}
+
