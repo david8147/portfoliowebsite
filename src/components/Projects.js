@@ -14,7 +14,7 @@ class Projects extends Component{
                                 <img style={style.projImagesReactNative} alt="" src={require('../images/ProjectImages/cryptocurrencywallet/cryptocurrencywallet1-1.png')}/>
                                 <div style={{display:'flex', flexDirection:'column', justifyContents:'center', alignItems:'center'}}>
                                     <p style={{textDecoration: 'none', color:'white', margin:0}}>CryptocurrencyWallet</p>
-                                    <p style={{textDecoration: 'none', color:'#c334eb', margin:0}}>[React-Native]</p>
+                                    <p style={{textDecoration: 'none', color:'#0ddb17', margin:0}}>[React-Native]</p>
                                 </div>
                             </Link>
                         </div>
@@ -25,7 +25,7 @@ class Projects extends Component{
                                 <img style={style.projImagesReactNative} alt="" src={require('../images/ProjectImages/radii/radii1-1.png')}/>
                                 <div style={{display:'flex', flexDirection:'column', justifyContents:'center', alignItems:'center'}}>
                                     <p style={{textDecoration: 'none', color:'white', margin:0}}>Radii</p>
-                                    <p style={{textDecoration: 'none', color:'#c334eb', margin:0}}>[React-Native]</p>
+                                    <p style={{textDecoration: 'none', color:'#0ddb17', margin:0}}>[React-Native]</p>
                                 </div>
                             </Link>
                         </div>

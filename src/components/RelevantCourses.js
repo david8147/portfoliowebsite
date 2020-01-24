@@ -5,7 +5,7 @@ import Slide from 'react-reveal/Slide';
 class RelevantCourses extends Component{
     render(){
         return(
-            <div style={{ display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', padding:10}}>
+            <div style={{ display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', padding:10, marginBottom:70}}>
                 <div>
                     <h1 style={{color:'yellow', marginBottom:5, textDecoration: 'underline'}}>RELEVANT COURSES</h1>
                 </div>

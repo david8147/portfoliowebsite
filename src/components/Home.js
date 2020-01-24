@@ -58,26 +58,20 @@ class Home extends Component{
     getMenu() {
         // const Menu = BurgerMenu['pushRotate'];
         const items = [
-            <h2 key="0"><i className="fa fa-fw fa-inbox fa-2x"/><span>Navigation</span></h2>,
+            <h2 key="0"><i className="fa fa-fw fa-inbox fa-2x"/><span><p style={{color:'yellow'}}>Navigation</p></span></h2>,
 
-            <div key="1" className="MenuContainer" onClick={() => scrollToComponent(this.FIRST, {offset: 0, align: 'top', duration: 1500})}>
-                <span className="MenuItem">Front</span>
-            </div>,
             <div key="2" className="MenuContainer" onClick={() => scrollToComponent(this.SECOND, {offset: 0, align: 'top', duration: 1500})}>
-                <span className="MenuItem">Projects</span>
+                <span className="MenuItem"><p style={styles.menuStyle}>Projects</p></span>
             </div>,
             <div key="3" className="MenuContainer" onClick={() => scrollToComponent(this.THIRD, {offset: 0, align: 'top', duration: 1500})}>
-                <span className="MenuItem">Education</span>
+                <span className="MenuItem"><p style={styles.menuStyle}>Education</p></span>
             </div>,
             <div key="4" className="MenuContainer" onClick={() => scrollToComponent(this.FOURTH, {offset: 0, align: 'top', duration: 1500})}>
-                <span className="MenuItem">Relevant Courses</span>
+                <span className="MenuItem"><p style={styles.menuStyle}>Courses</p></span>
             </div>,
             <div key="5" className="MenuContainer" onClick={() => scrollToComponent(this.FIFTH, {offset: 0, align: 'top', duration: 1500})}>
-                <span className="MenuItem">Skills</span>
+                <span className="MenuItem"><p style={styles.menuStyle}>Skills</p></span>
             </div>,
-            <div key="6" className="MenuContainer" onClick={() => scrollToComponent(this.SIXTH, {offset: 0, align: 'top', duration: 1500})}>
-                <span className="MenuItem">Contact</span>
-            </div>
         ];
         return (
             <Menu right width={'20%'} styles={styles}>
@@ -181,11 +175,11 @@ class Home extends Component{
                         />
                         {this.getMenu()}
                         <div style={{height:80}}/>
-                        <section
-                            ref={(section) => {
-                                this.FIRST = section;
-                            }}>
-                        </section>
+                        {/*<section*/}
+                            {/*ref={(section) => {*/}
+                                {/*this.FIRST = section;*/}
+                            {/*}}>*/}
+                        {/*</section>*/}
                         {/*<Fade>*/}
                         <div style={{display:'flex', flexDirection:'column', justifyContents:'center', alignItems:'center',}}>
                             <div style={{display:'flex', flexDirection:'column', justifyContents:'center', alignItems:'center',
@@ -230,10 +224,10 @@ class Home extends Component{
                         </section>
                         <Skills/>
 
-                        <section ref={(section) => {
-                            this.SIXTH = section;
-                        }}>
-                        </section>
+                        {/*<section ref={(section) => {*/}
+                            {/*this.SIXTH = section;*/}
+                        {/*}}>*/}
+                        {/*</section>*/}
                         <Contact/>
                     </AnimatedBg>
                 </Fade>}
@@ -256,18 +250,19 @@ let styles = {
     },
     bmCross: {
         // background: '#bdc3c7'
-        background:'red',
+        background:'yellow',
     },
     bmMenu: {
-        background: 'yellow',
+        background: '#00001c',
         padding: '2.5em 1.5em 0',
         fontSize: '1.15em'
     },
     bmItemList: {
         // color: '#b8b7ad',
-        color: 'red',
+        color: 'white',
         padding: '0.8em',
         cursor: 'pointer',
+
     },
     bmOverlay: {
         background: 'rgba(0, 0, 0, 0.5)'
@@ -279,7 +274,10 @@ let styles = {
     },
     bmMorphShape: {
         // fill: '#373a47'
-        fill:'red'
+        fill:'yellow'
+    },
+    menuStyle:{
+      marginTop:5,
     },
 }
 export default Home;

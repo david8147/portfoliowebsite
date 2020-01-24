@@ -10,18 +10,20 @@ class ProjectPagesHeader extends Component{
             <div className="NavigationBar">
 
                 <Fade left>
-                    <Link to={"/"} className="Link">
-                        <div className="Name Pad">David Woo</div>
+                    <Link  style={{textDecoration: 'inherit'}} to={"/"} className="Link">
+                        <div className="Name Pad"><p style={{marginLeft:30}}>David Woo</p></div>
                     </Link>
 
                     <a href={"https://github.com/cedricholz"} target="_blank" rel="noopener noreferrer">
                         <img alt="" src={githubImage} className="NavigationButtons Pad"/>
                     </a>
-                    <a href={"https://docs.google.com/document/d/1ZAldDQejehmZ9KgPlc3DmpAhL6iX4H7Kc9O6YGz6Uas/edit?usp=sharing"}
+                    <a
+                        style={{textDecoration: 'inherit'}}
+                        href={"https://docs.google.com/document/d/1ZAldDQejehmZ9KgPlc3DmpAhL6iX4H7Kc9O6YGz6Uas/edit?usp=sharing"}
                        target="_blank" rel="noopener noreferrer">
                         <div className="Resume Pad">[Resume]</div>
                     </a>
-                    <p> david8147@berkeley.edu </p>
+                    <p  style={{color: 'white'}}> david8147@berkeley.edu </p>
                 </Fade>
             </div>
 

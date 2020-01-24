@@ -4,7 +4,7 @@ import githubImage from '../images/github.png'
 class Contact extends Component{
     render(){
         return(
-            <div style={{display: 'flex', flexDirection:'column', alignItems:'center', justifyContents:'center', paddingBottom:30, marginTop:80}}>
+            <div style={{display: 'flex', flexDirection:'column', alignItems:'center', justifyContents:'center', paddingBottom:30, marginTop:100}}>
                 <div style={{display: 'flex', flexDirection:'row',alignItems:'center', justifyContents:'center',}}>
                     <a  style={{margin: 5}} href={"https://github.com/david8147"}  target="_blank">
                         <img alt="" src={githubImage}
