@@ -8,7 +8,7 @@ class cryptocurrencyDataScraper extends Component{
     render(){
         return(
             <div>
-                <div style={{background:'linear-gradient(to bottom right, purple, violet)'}}>
+                <div style={{background:'linear-gradient(to bottom right, red, yellow)'}}>
                     <ProjectPagesHeader/>
                     <div style={{display:'flex',height:'400px', justifyContent:'center', alignItems:'center', }}>
                         <Fade up>
@@ -20,23 +20,23 @@ class cryptocurrencyDataScraper extends Component{
                 <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center',backgroundColor:'#00001c'}}>
                     <div style={{width:'80%', marginBottom:50}}>
                         <p style={{color:'yellow'}}>
-                            Python program that gathers data from Cryptocompare of the coins predetermined
-                            Gathers data every 90 seconds of the coin's price, 24hr volume, 1hr volume, median, change/1hrs, change/24hrs
+                            A Python program that gathers data from Cryptocompare of the coins predetermined.
+                            It gathers data every 90 seconds of the coin's price, 1hr volume, 24hr volume, median, percent-change/1hr, percent-change/24hrs
                         </p>
                     </div>
-                    <div style={{display:'flex', flexDirection:'row', justifyContent:'space-around', alignItems:'center', width:'80%', marginBottom:30}}>
+                    <div style={{display:'flex', flexDirection:'row', justifyContent:'space-around', alignItems:'center', width:'80%', marginBottom:40}}>
                         <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', textAlign:'center'}}>
                             <img style={style.projImages} alt="" src={require('../../images/ProjectImages/dataScraper/datascraper3.png')}/>
-                            <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
-                                <p style={{color:'yellow'}}>Data collected</p>
+                            <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:-40}}>
+                                <p style={{color:'yellow'}}>What the collected Data looks like</p>
                             </div>
                         </div>
                     </div>
-                    <div style={{display:'flex', flexDirection:'row', justifyContent:'space-around', alignItems:'center', width:'80%', marginBottom:30}}>
+                    <div style={{display:'flex', flexDirection:'row', justifyContent:'space-around', alignItems:'center', width:'80%', marginBottom:40}}>
                         <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', textAlign:'center'}}>
                             <img style={style.projImages} alt="" src={require('../../images/ProjectImages/dataScraper/datascraper4.png')}/>
-                            <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
-                                <p style={{color:'yellow'}}>Cryptocompare</p>
+                            <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:-80}}>
+                                <p style={{color:'yellow'}}>Cryptocompare API</p>
                             </div>
                         </div>
                     </div>

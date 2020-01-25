@@ -30,7 +30,7 @@
 }
 .ProjectsProjImagesReactNative{
     height:80vh;
-    width:20vw;
+    width:19vw;
 }
 .ProjectsLink{
     text-decoration: inherit;
@@ -46,7 +46,7 @@
     color:white;
     margin:0;
 }
-.ProjectsProjText{
+.ProjectsProjTextBottom{
     text-decoration: none;
     color:white;
     margin: 20px 0 0;

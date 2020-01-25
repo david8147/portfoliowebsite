@@ -19,6 +19,7 @@ import gcp from "../../images/gcp.png"
 import nodejs from "../../images/nodejs.png"
 import rest from "../../images/rest.png"
 
+import Contact from '.././Contacts/Contact'
 import './skillsStyles.css'
 
 class Skills extends Component {
@@ -111,7 +112,7 @@ class Skills extends Component {
             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', height: 600, marginBottom:-50}}>
                 <h1 style={{color: 'yellow', textDecoration: 'underline', marginBottom: 0}}>SKILLS</h1>
                     <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', marginBottom:0 }}>
-                        <div style={{marginBottom:30, marginRight:30, padding:0, display:'flex', flexDirection:'column', justifyContent:'space-around',width:'15vh', height:'70vh'}}>
+                        <div style={{marginBottom:30, marginRight:30, padding:0, display:'flex', flexDirection:'column', justifyContent:'space-around',width:'18vh', height:'70vh'}}>
                             <p style={{fontSize:15 , color:'yellow', marginTop:-30}}>Call Me God of Programming</p>
                             <p style={{fontSize:15, color:'yellow'}}> Competent</p>
                             <p style={{fontSize:15, color:'yellow', marginBottom:0}}>Heard About it Once</p>
@@ -199,6 +200,7 @@ class Skills extends Component {
                         <img alt="" src={webstorm} className="Technology"/>
                     </a>
                 </div>
+                <Contact/>
             </div>
         )
     }

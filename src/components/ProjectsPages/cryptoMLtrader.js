@@ -19,20 +19,23 @@ class cryptoMLtrader extends Component{
                 <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center',backgroundColor:'#00001c'}}>
                     <div style={{width:'80%', marginBottom:50}}>
                         <p style={{color:'yellow'}}>
-                            A Python program that automatically buys and sells cryptocurrency from Bittrex exchange
-                            Utilized various strategies including: Hold_Until_Strategy, Keltner_Channel_Strategy, ML_Strategy, Percent_Window_Strategy, Top_Reddit_Strategy
-
-                            First thing to do was to make a program that connects to Bittrex and Coinmarketcap and buys and sell coins using a basic strategy to figure out baseline and compare with other strategies.
-                            Next thing to do was to figure out the actual strategy. I utilized various strategies that are common in stock trading: Keltner Channel Strategy
-                            I utilized various forms of strategies and thus included mentions in Reddit.com/r/CryptoCurrency y would often mention coins days or months before they would shoot up astronomically high, then organize the coins and rank them by the total upvotes associated with them as well as analyze the sentiment of what is being said about each coin using the Python Natural Language Toolkit.
-
-                            The last strategy to be implemented was using Machine Learning:
-                            The heaviest work was to gather data of cryptocurrencies in order to create training data and validation data.
-                            Because there weren't any API that provided more information regarding historical data of the coins other than price, volume.
+                            A Python program that automatically buys and sells cryptocurrency from Bittrex exchange.
+                            It utilizes various strategies including: Machine Learning Strategy, Hodl strategy, Keltner Channel Strategy, Percent Window Strategy, Top Reddit Strategy
+                        </p>
+                        <p style={{color:'yellow'}}>
+                            The first thing to do was to make a program that connects to Bittrex and Coinmarketcap and buys and sell coins using a basic strategy to figure out a baseline and to compare with other strategies.
+                            Next thing to do was to figure out the actual strategy in order to maximize profit. I utilized various strategies that are commonly practiced in stock trading such as utilizing the Keltner Channel.
+                        </p>
+                        <p style={{color:'yellow'}}>
+                            I utilized other forms of strategies such as examining mentions in Reddit.com/r/CryptoCurrency. The thread would often mention coins days or even months before their prices would shoot up astronomically high.
+                            I gather data from the Reddit thread and then organize the coins by ranking them by the total upvotes associated with them as well as analyzing the sentiment of what is being said about each coin using the Python Natural Language Toolkit.
+                        </p>
+                        <p style={{color:'yellow'}}>
+                            The last strategy to be implemented was using Machine Learning. The heaviest work was to gather data of cryptocurrencies in order to create training data and validation data.
+                            There weren't any API that provided more information regarding historical data of the coins other than price and volume.
                             Because I needed more data to give to the machine to train, this meant I had to gather data myself - This took roughly a month.
                             After gathering data, I used Tensorflow in order to come up with the ideal model which involved fine-tuning variables and trying different layers. A lot of it was testing and waiting for the result.
-                            After the model performs above a certain threshold, the actual strategy to buy a certain coin was if the model gives more than a 80% confidence that buying that coin will result in an increase in price.
-
+                            If the model performs above a certain threshold on the validation data, the actual strategy to buy a certain coin was if the model gives more than a 80% confidence that buying that coin will result in an increase in price.
                         </p>
                     </div>
                     <div style={{display:'flex', flexDirection:'row', justifyContent:'space-around', alignItems:'center', width:'80%', marginBottom:60}}>
@@ -40,7 +43,7 @@ class cryptoMLtrader extends Component{
                             <img style={style.projImages} alt="" src={require('../../images/ProjectImages/cryptoMLPredictionTrader/cryptoMLPredictionTrader1.png')}/>
                             <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
                                 <p style={{color:'yellow', marginBottom:-10, marginTop:-40}}>Tensorboard - Tensorflow Visualization Toolkit</p>
-                                <p style={{color:'yellow',}}>Tracking and visualizing metrics such as loss and accuracy per each epoch</p>
+                                <p style={{color:'yellow',}}>Tracking and visualizing metrics such as loss and accuracy per each epoch through graphs</p>
                             </div>
                         </div>
                     </div>
@@ -49,7 +52,7 @@ class cryptoMLtrader extends Component{
                             <img style={style.projImages} alt="" src={require('../../images/ProjectImages/cryptoMLPredictionTrader/cryptoMLPredictionTrader3.png')}/>
                             <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
                                 <p style={{color:'yellow', marginBottom:-10, marginTop:0}}>Machine Training - Accuracy increases and Loss decreases per each epoch</p>
-                                <p style={{color:'yellow'}}>Tracking and visualizing metrics such as loss and accuracy per each epoch</p>
+                                <p style={{color:'yellow'}}>Tracking metrics such as loss and accuracy per each epoch in numbers</p>
                             </div>
                         </div>
                     </div>

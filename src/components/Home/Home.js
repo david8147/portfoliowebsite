@@ -3,7 +3,6 @@ import React,{Component, useState} from 'react';
 import Front from '../Front/Front'
 import RelevantCourses from '../RelevantCourses/RelevantCourses'
 import Skills from '../Skills/Skills'
-import Contact from '../Contacts/Contact'
 import Education from '../Education/Education'
 import Projects from '../Projects/Projects'
 import Component4 from '../FrontWelcome/FrontWelcome'
@@ -15,10 +14,6 @@ import { AnimatedBg, Transition } from 'scroll-background';
 import Particles from 'react-particles-js';
 
 import './Home.css'
-import { useSpring, animated } from 'react-spring'
-import Typist from 'react-typist';
-import ReactRevealText from "react-reveal-text";
-import ScrollingColorBackground from 'react-scrolling-color-background'
 
 class Home extends Component{
     constructor(props){
@@ -34,25 +29,10 @@ class Home extends Component{
     componentDidMount(){
         setTimeout(() => {
             this.setState({open1:false, open3:true, open2:true,}, ()=>{
-                this.changeMainColor();
             })
-        },1000);
-        // setTimeout(() => {
-        //     this.setState({open2:true})
-        // }, 2000);
-        // setTimeout(() => {
-        //     this.setState({open3:true, open2:false})
-        // }, 7000);
-
-    }
-    changeMainColor=()=>{
-        // setTimeout(() => {
-        //     this.setState({mainColor:'black'})
-        // },1000);
-
+        },5500);
     }
     getMenu() {
-        // const Menu = BurgerMenu['pushRotate'];
         const items = [
             <h2 key="0"><i className="fa fa-fw fa-inbox fa-2x"/><span><p style={{color:'yellow'}}>Navigation</p></span></h2>,
 
@@ -91,7 +71,7 @@ class Home extends Component{
                     <AnimatedBg >
                         <Particles
                             style={{position:'absolute'}}
-                            height={window.innerHeight*7}
+                            height={window.innerHeight*7.7}
                             params={{
                                 particles: {
                                     number: {
@@ -166,33 +146,25 @@ class Home extends Component{
                         />
                         {this.getMenu()}
                         <div style={{height:80}}/>
-                        {/*<section*/}
-                            {/*ref={(section) => {*/}
-                                {/*this.FIRST = section;*/}
-                            {/*}}>*/}
-                        {/*</section>*/}
-                        {/*<Fade>*/}
+
                         <div className='HomeFlexCol'>
                             <div className='HomeFlexColFull'>
                                 <Front />
                             </div>
                         </div>
-                        {/*</Fade>*/}
-                        {/*<Transition height='200px' from="#030024" to="#000080" position={0.5}/>*/}
+
                         <section
                             ref={(section) => {
                                 this.SECOND = section;
                             }}>
                         </section>
-                        {/*<Fade>*/}
+
                             <div className='HomeFlexCol'>
                                 <div  className='HomeFlexColFull'>
                                     <Projects />
                                 </div>
                             </div>
-                        {/*</Fade>*/}
 
-                        {/*<Transition height='200px' from="#981703" to="#301732" />*/}
                         <section ref={(section) => {
                             this.THIRD = section;
                         }}>
@@ -200,7 +172,6 @@ class Home extends Component{
                         <Fade>
                             <Education/>
                         </Fade>
-                        {/*<Transition height='200px' from="#0D47A1" to="#388E3C" />*/}
                         <section ref={(section) => {
                             this.FOURTH = section;
                         }}>
@@ -211,13 +182,10 @@ class Home extends Component{
                             this.FIFTH = section;
                         }}>
                         </section>
-                        <Skills/>
+                        <Fade up>
+                            <Skills/>
+                        </Fade>
 
-                        {/*<section ref={(section) => {*/}
-                            {/*this.SIXTH = section;*/}
-                        {/*}}>*/}
-                        {/*</section>*/}
-                        <Contact/>
                     </AnimatedBg>
                 </Fade>}
             </div>

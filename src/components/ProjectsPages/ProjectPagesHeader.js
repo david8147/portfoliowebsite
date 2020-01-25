@@ -14,12 +14,12 @@ class ProjectPagesHeader extends Component{
                         <div className="Name Pad"><p style={{marginLeft:30}}>David Woo</p></div>
                     </Link>
 
-                    <a href={"https://github.com/cedricholz"} target="_blank" rel="noopener noreferrer">
+                    <a href={"https://github.com/david8147"} target="_blank" rel="noopener noreferrer">
                         <img alt="" src={githubImage} className="NavigationButtons Pad"/>
                     </a>
                     <a
                         style={{textDecoration: 'inherit'}}
-                        href={"https://docs.google.com/document/d/1ZAldDQejehmZ9KgPlc3DmpAhL6iX4H7Kc9O6YGz6Uas/edit?usp=sharing"}
+                        href={"https://docs.google.com/document/d/1FVcUHJPHl_SDBYhYk1kCUCjaXZSdjYFH1u4QClnZf8U/edit?usp=sharing"}
                        target="_blank" rel="noopener noreferrer">
                         <div className="Resume Pad">[Resume]</div>
                     </a>

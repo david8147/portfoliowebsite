@@ -4,13 +4,13 @@ import './Contact.css'
 class Contact extends Component{
     render(){
         return(
-            <div className='Main'>
-                <div className='Wrapper'>
-                    <a  className='Link' href={"https://github.com/david8147"}  target="_blank">
+            <div className='ContactMain'>
+                <div className='ContactWrapper'>
+                    <a  className='ContactLink' href={"https://github.com/david8147"}  target="_blank">
                         <img alt="" src={githubImage} rel="noopener noreferrer"/>
                     </a>
                     <a  className='ContactsText'
-                        href={"https://docs.google.com/document/d/1ZAldDQejehmZ9KgPlc3DmpAhL6iX4H7Kc9O6YGz6Uas/edit?usp=sharing"}  target="_blank">
+                        href={"https://docs.google.com/document/d/1FVcUHJPHl_SDBYhYk1kCUCjaXZSdjYFH1u4QClnZf8U/edit?usp=sharing"}  target="_blank">
                         <div className='ResumeText'>
                             [Resume]
                         </div>
