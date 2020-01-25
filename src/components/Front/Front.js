@@ -17,6 +17,7 @@ class Front extends Component{
                         hideWhenDone: true,
                         hideWhenDoneDelay: 0,
                     }}>
+                        <Typist.Delay ms={1500} />
                         <span style={{color:'yellow'}}>Front-End</span>
                         <Typist.Backspace count={9} delay={1000}/>
                         <span style={{color:'yellow'}}>Back-End</span>

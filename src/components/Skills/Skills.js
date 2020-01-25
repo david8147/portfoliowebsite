@@ -27,21 +27,18 @@ class Skills extends Component {
         const skills = [
                 {
                     Name: "Python",
-                    //BarColor: "#366E9D",
                     BarColor: "linear-gradient(to top right, #005C97, #363795)",
                     percentage: 80,
                     imageName: 'python.png'
                 },
                 {
                     Name: "React.js",
-                    // BarColor: "#00d8ff",
                     BarColor: "linear-gradient(to top right, #06beb6, #48b1bf)",
                     percentage: 90,
                     imageName: 'react.png'
                 },
                 {
                     Name: "Java",
-                    //BarColor: "#F8981D",
                     BarColor: "linear-gradient(to top right, #fc4a1a, #f7b733)",
                     percentage: 90,
                     imageName: 'java.png'
@@ -49,7 +46,6 @@ class Skills extends Component {
 
                 {
                     Name: "Android",
-                    //BarColor: "#A4C639",
                     BarColor: "linear-gradient(to top right, #00b09b, #96c93d)",
                     percentage: 60,
                     imageName: 'android.png'
@@ -63,35 +59,30 @@ class Skills extends Component {
                 },
                 {
                     Name: "HTML",
-                    //BarColor: "#E34C25",
                     BarColor: "linear-gradient(to top right, #E44D26, #F16529)",
                     percentage: 80,
                     imageName: 'html.png'
                 },
                 {
                     Name: "CSS",
-                    //BarColor: "#33A9DC",
                     BarColor: "linear-gradient(to top right, #2193b0, #6dd5ed)",
                     percentage: 80,
                     imageName: 'css.png'
                 },
                 {
                     Name: "C",
-                    //BarColor: "#65D0B6",
                     BarColor: "linear-gradient(to top right, #11998e, #38ef7d)",
                     percentage: 60,
                     imageName: 'cprog.png'
                 },
                 {
                     Name: "C++",
-                    //BarColor: "#004283",
                     BarColor: "linear-gradient(to top right, #1e3c72, #2a5298)",
                     percentage: 60,
                     imageName: 'c.png'
                 },
                 {
                     Name: "Linux",
-                    //BarColor: "#FCB713",
                     BarColor: "linear-gradient(to top right, #FDC830, #F37335)",
                     percentage: 70,
                     imageName: 'linux.png'
@@ -99,7 +90,6 @@ class Skills extends Component {
 
                 {
                     Name: "SQL",
-                    //BarColor: "#0072C6",
                     BarColor: "linear-gradient(to top right, #396afc, #2948ff)",
                     percentage: 70,
                     imageName: 'sql.png'

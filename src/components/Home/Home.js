@@ -5,7 +5,7 @@ import RelevantCourses from '../RelevantCourses/RelevantCourses'
 import Skills from '../Skills/Skills'
 import Education from '../Education/Education'
 import Projects from '../Projects/Projects'
-import Component4 from '../FrontWelcome/FrontWelcome'
+import FrontWelcome from '../FrontWelcome/FrontWelcome'
 
 import Fade from 'react-reveal/Fade';
 import  { slide as Menu}  from 'react-burger-menu'
@@ -19,23 +19,18 @@ class Home extends Component{
     constructor(props){
         super(props);
         this.state={
-            open:false,
-            open1:true,
-            open2: true,
-            open3:false,
-            mainColor:'#f5d300'
+            open1: true,
+            open2: false,
         }
     }
     componentDidMount(){
         setTimeout(() => {
-            this.setState({open1:false, open3:true, open2:true,}, ()=>{
-            })
+            this.setState({open1:false, open2:true})
         },5500);
     }
     getMenu() {
         const items = [
             <h2 key="0"><i className="fa fa-fw fa-inbox fa-2x"/><span><p style={{color:'yellow'}}>Navigation</p></span></h2>,
-
             <div key="2" className="MenuContainer" onClick={() => scrollToComponent(this.SECOND, {offset: 0, align: 'top', duration: 1500})}>
                 <span className="MenuItem"><p style={styles.menuStyle}>Projects</p></span>
             </div>,
@@ -53,7 +48,6 @@ class Home extends Component{
             <Menu right width={'20%'} styles={styles}>
                 {items}
             </Menu>
-
         );
 
     }
@@ -61,13 +55,13 @@ class Home extends Component{
         return(
             <div style={{backgroundColor:'#00001c'}}>
                 {this.state.open1 && (
-                    <Fade when={this.state.open2}>
-                        <Component4/>
+                    <Fade>
+                        <FrontWelcome/>
                     </Fade>
                 )}
 
-                {this.state.open3 &&
-                <Fade>
+                {this.state.open2 &&
+                <Fade >
                     <AnimatedBg >
                         <Particles
                             style={{position:'absolute'}}
@@ -147,18 +141,19 @@ class Home extends Component{
                         {this.getMenu()}
                         <div style={{height:80}}/>
 
-                        <div className='HomeFlexCol'>
-                            <div className='HomeFlexColFull'>
-                                <Front />
+                        <Fade down>
+                            <div className='HomeFlexCol'>
+                                <div className='HomeFlexColFull'>
+                                    <Front />
+                                </div>
                             </div>
-                        </div>
+                        </Fade>
 
                         <section
                             ref={(section) => {
                                 this.SECOND = section;
                             }}>
                         </section>
-
                             <div className='HomeFlexCol'>
                                 <div  className='HomeFlexColFull'>
                                     <Projects />
@@ -172,6 +167,7 @@ class Home extends Component{
                         <Fade>
                             <Education/>
                         </Fade>
+
                         <section ref={(section) => {
                             this.FOURTH = section;
                         }}>
@@ -187,7 +183,8 @@ class Home extends Component{
                         </Fade>
 
                     </AnimatedBg>
-                </Fade>}
+                </Fade>
+                }
             </div>
         )
     }
@@ -203,10 +200,8 @@ let styles = {
     },
     bmBurgerBars: {
         background:'white'
-        // background: '#373a47'
     },
     bmCross: {
-        // background: '#bdc3c7'
         background:'yellow',
     },
     bmMenu: {
@@ -215,7 +210,6 @@ let styles = {
         fontSize: '1.15em'
     },
     bmItemList: {
-        // color: '#b8b7ad',
         color: 'white',
         padding: '0.8em',
         cursor: 'pointer',
@@ -223,14 +217,12 @@ let styles = {
     },
     bmOverlay: {
         background: 'rgba(0, 0, 0, 0.5)'
-        // background:'black'
     },
     bmCrossButton: {
         height: '24px',
         width: '24px'
     },
     bmMorphShape: {
-        // fill: '#373a47'
         fill:'yellow'
     },
     menuStyle:{

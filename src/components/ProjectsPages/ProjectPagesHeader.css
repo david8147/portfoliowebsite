@@ -13,18 +13,10 @@
     padding-left: 1.2vh;
     padding-right: 1.2vh;
 }
-
-
-
 .NavigationBar {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /*justify-content: space-between;*/
-    /*padding-left: 15%;*/
-    /*padding-right: 15%;*/
-    /*padding-left: 3vh;*/
-
     padding-top: 10px;
     padding-bottom: 10px;
     height: 50px;
@@ -32,8 +24,6 @@
     background: rgba(0, 0, 0, 0.24);
 
 }
-
-
 @media only screen and (max-width: 600px) {
     .NavigationBar {
         padding-left: 6px;
