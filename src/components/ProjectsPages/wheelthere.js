@@ -90,7 +90,7 @@ class wheelthere extends Component{
                     </div>
                     <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', textAlign:'center', marginBottom:100}}>
                         <a style={{textDecoration:'inherit', color:'white'}}
-                           href={"https://github.com/david8147"} className="Link" target="_blank" rel="noopener noreferrer">
+                           href={"https://github.com/david8147/WheelThere"} className="Link" target="_blank" rel="noopener noreferrer">
                             <h2>{'Project Code On Github'}</h2>
                             <img style={{height:60, width:60}} alt="" src={github}/>
                         </a>
