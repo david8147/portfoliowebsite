@@ -21,11 +21,11 @@ class wheelthere extends Component{
                         <p style={{color:'yellow'}}>
                             This React app is designed to be a travel app for people with physical disabilities. The motivation behind this app is that
                             the way one views and judges certain aspects of life may differ if one has physical disabilities. I believe that traveling
-                             falls into such aspects. How one views a certain travel location would be different in many ways if one is disabled.
+                             falls into such aspects because how one views a certain travel location would be different in many ways if one has physical disabilities.
                             Thus, the name of the app is 'wheelthere' as in: 'Can I wheel there?'.
                         </p>
                         <p style={{color:'yellow'}}>
-                            Because this app was designed for people with disabilities, I added the functionality that provides a way to navigate
+                            Because this app was designed for people with physical disabilities, I added the functionality that provides a way to navigate
                             through the website with voice commands such as: 'Search Hashtag Sunny', 'Add Map', 'My Account', 'Go Back', and more.
 
                         </p>
@@ -58,16 +58,17 @@ class wheelthere extends Component{
                         <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', textAlign:'center'}}>
                             <img style={style.projImages} alt="" src={require('../../images/ProjectImages/wheelthere/wheelthere6.png')}/>
                             <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
-                                <p style={{color:'yellow', marginTop:-60}}>When creating a Trip, the user clicks and drags over the Pin to the desired location on the Map</p>
+                                <p style={{color:'yellow', marginTop:-50}}>When creating a Trip, the user clicks and drags over the Pin to the desired location on the Map.</p>
+                                <p style={{color:'yellow', marginTop:-20}}>Then for each pin, the user can give a picture, ratings, and comments</p>
                             </div>
                         </div>
                     </div>
                     <div style={{display:'flex', flexDirection:'row', justifyContent:'space-around', alignItems:'center', width:'80%', marginBottom:30}}>
                         <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', textAlign:'center'}}>
                             <img style={style.projImages} alt="" src={require('../../images/ProjectImages/wheelthere/wheelthere7.png')}/>
-                            <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:-60}}>
+                            <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:10}}>
                                 <p style={{color:'yellow', margin:0}}>Modal that appears when user clicks one of the pins on the map</p>
-                                <p style={{color:'yellow', marginTop:0}}>Each Pin on the map is associated a Location Info which includse pictures as well as ratings: Rollability, Transport, and more </p>
+                                <p style={{color:'yellow', marginTop:0}}>The information associated with the pin such as picture, ratings, and comments are shown </p>
                             </div>
                         </div>
                     </div>
@@ -83,8 +84,8 @@ class wheelthere extends Component{
                     <div style={{display:'flex', flexDirection:'row', justifyContent:'space-around', alignItems:'center', width:'80%', marginBottom:30}}>
                         <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', textAlign:'center'}}>
                             <img style={style.projImages} alt="" src={require('../../images/ProjectImages/wheelthere/wheelthere4.png')}/>
-                            <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:-60}}>
-                                <p style={{color:'yellow'}}>Account page which shows all user's past trips and a way to edit profile</p>
+                            <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:-70}}>
+                                <p style={{color:'yellow'}}>Account page which shows all user's past trips and a way to edit profile information</p>
                             </div>
                         </div>
                     </div>

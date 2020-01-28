@@ -100,7 +100,7 @@ class Skills extends Component {
         const graphHeightPixels = 400;
         return (
             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', height: 600, marginBottom:-50}}>
-                <h1 style={{color: 'yellow', textDecoration: 'underline', marginBottom: 0}}>SKILLS</h1>
+                <h1 className="mainText">SKILLS</h1>
                     <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', marginBottom:0 }}>
                         <div style={{marginBottom:30, marginRight:30, padding:0, display:'flex', flexDirection:'column', justifyContent:'space-around',width:'18vh', height:'70vh'}}>
                             <p style={{fontSize:15 , color:'yellow', marginTop:-30}}>Call Me God of Programming</p>

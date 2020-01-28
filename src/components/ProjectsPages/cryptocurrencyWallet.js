@@ -19,16 +19,16 @@ class cryptocurrencyWallet extends Component{
                 <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center',backgroundColor:'#00001c'}}>
                     <div style={{width:'80%', marginBottom:50}}>
                         <p style={{color:'yellow'}}>
-                            This React-Native app lets the user keep track of all the user's cryptocurrencies from the three major cryptocurrency exchanges
-                            (Binance, Bittrex, Kucoin) by combining them into one portfolio. The app presents all the cryptocurrency coins in total and also allows the user to add and remove coins manually.
+                            This React-Native app lets the user keep track of all the user's cryptocurrencies from the three major exchanges
+                            (Binance, Bittrex, Kucoin) by combining them into one portfolio. The app also allows the user to add and remove coins manually and presents all the cryptocurrency coins in total.
                         </p>
                         <p style={{color:'yellow'}}>
 
                         </p>
                         <p style={{color:'yellow'}}>
-                            When the app is launched or refreshed, the app uses the entered API keys of all three exchanges to gather all the coin balances.
+                            When the app is launched or refreshed, it uses the entered API keys of all three exchanges to gather the respective coin balances.
                             Then it combines the manually entered coins to present the aggregated coin balances.
-                            The app also shows the 1h, 24h, 7d changes in percentages for each held coins and also for the total portfolio.
+                            The app also shows the 1h, 24h, 7d changes in percentages for each held coins and for the total portfolio.
                         </p>
 
                     </div>

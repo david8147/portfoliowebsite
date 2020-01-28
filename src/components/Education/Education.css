@@ -5,10 +5,17 @@
     justify-content: center;
     align-items: center;
     margin-top:100px;
+    margin-bottom:100px;
 }
 .EducationText{
+    padding-bottom: 5px;
+    border-bottom: 8px solid yellow;
     color:yellow;
-    text-decoration: underline;
+    margin-bottom: 50px;
+    font-size:40px;
+    /*margin-top:150px;*/
+    /*color:yellow;*/
+    /*text-decoration: underline;*/
 }
 .SealImage{
     height:90px;

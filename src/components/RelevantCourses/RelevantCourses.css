@@ -8,9 +8,14 @@
 
 }
 .RelevantCoursesText{
+    /*color:yellow;*/
+    /*margin-bottom: 5px;*/
+    /*text-decoration: underline;*/
+    padding-bottom: 5px;
+    border-bottom: 8px solid yellow;
     color:yellow;
-    margin-bottom: 5px;
-    text-decoration: underline;
+    margin-bottom: 50px;
+    font-size:40px;
 }
 .RelevantCoursesLink{
     text-decoration: none;

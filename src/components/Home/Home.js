@@ -26,7 +26,7 @@ class Home extends Component{
     componentDidMount(){
         setTimeout(() => {
             this.setState({open1:false, open2:true})
-        },5500);
+        },8000);
     }
     getMenu() {
         const items = [
@@ -85,12 +85,12 @@ class Home extends Component{
                                             color: "#000000"
                                         },
                                         polygon: {
-                                            nb_sides: 10
+                                            nb_sides: 5
                                         },
                                         image: {
                                             src: "img/github.svg",
-                                            width: 1000,
-                                            height: 1000
+                                            width: 100,
+                                            height: 100
                                         }
                                     },
                                     size: {
@@ -98,17 +98,17 @@ class Home extends Component{
                                         random: true,
                                         anim: {
                                             enable: false,
-                                            speed: 2,
+                                            speed: 40,
                                             size_min: 0.1,
                                             sync: false
                                         }
                                     },
                                     line_linked: {
                                         enable: true,
-                                        distance: 20,
+                                        distance: 180,
                                         color: "#e3e022",
-                                        opacity: 0.9,
-                                        width: 2
+                                        opacity: 0.7,
+                                        width: 1
                                     },
                                     move: {
                                         enable: true,
@@ -164,9 +164,8 @@ class Home extends Component{
                             this.THIRD = section;
                         }}>
                         </section>
-                        <Fade>
-                            <Education/>
-                        </Fade>
+
+                        <Education/>
 
                         <section ref={(section) => {
                             this.FOURTH = section;

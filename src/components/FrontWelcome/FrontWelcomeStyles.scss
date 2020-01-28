@@ -52,22 +52,26 @@ body {
   z-index: 7;
   text-align: left;
   margin: -50px 0 0 -150px;
-  width: 300px;
+  width: 1000px;
   height: 100px;
   top: 30%;
-  left: 50%;
+  left: 35%;
   font-size: 48px;
   font-weight: 700;
   p {
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
-    @include animation('type .3s steps(60, end) 3.7s');
+
+    @include animation('type 2s steps(60, end) 3.7s');
   }
-  p:nth-child(2) {
-    @include animation('type2 .5s steps(60, end) 3.7s');
+  p:nth-child(1) {
+    @include animation('type2 5s steps(60, end) 3.7s');
   }
-  @include animation('on .6s ease-in-out 3.7s forwards');
+  //p:nth-child(2) {
+  //  @include animation('type2 9s steps(60, end) 3.7s');
+  //}
+  @include animation('on 2s ease-in-out 3.7s forwards');
 
   button {
     border:0;

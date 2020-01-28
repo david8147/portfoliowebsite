@@ -6,9 +6,13 @@
     width:60%;
 }
 .ProjectsMainText{
+    padding-bottom: 5px;
+    border-bottom: 8px solid yellow;
     color:yellow;
     margin-bottom: 50px;
-    text-decoration: underline;
+    font-size:45px;
+    margin-top:150px;
+    /*text-decoration: underline;*/
 }
 .ProjectsMainDiv{
     display:flex;

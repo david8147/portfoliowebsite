@@ -63,3 +63,10 @@
     height: 5.5vh;
     margin-bottom: 1.5vh;
 }
+.mainText{
+    padding-bottom: 5px;
+    border-bottom: 8px solid yellow;
+    color:yellow;
+    margin-bottom: 10px;
+    font-size:40px;
+}

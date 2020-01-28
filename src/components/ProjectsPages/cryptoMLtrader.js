@@ -23,8 +23,8 @@ class cryptoMLtrader extends Component{
                             It utilizes various strategies including: Machine Learning Strategy, Hodl strategy, Keltner Channel Strategy, Percent Window Strategy, Top Reddit Strategy
                         </p>
                         <p style={{color:'yellow'}}>
-                            The first thing to do was to make a program that connects to Bittrex and Coinmarketcap and buys and sell coins using a basic strategy to figure out a baseline and to compare with other strategies.
-                            Next thing to do was to figure out the actual strategy in order to maximize profit. I utilized various strategies that are commonly practiced in stock trading such as utilizing the Keltner Channel.
+                            The first thing to do was to make a program that connects to Bittrex and Coinmarketcap and buys and sells coins using a basic strategy to figure out a baseline and to compare with other strategies.
+                            Next thing to do was to figure out the actual strategies in order to maximize profit. I initially utilized various strategies that are commonly practiced in stock trading such as utilizing the Keltner Channel.
                         </p>
                         <p style={{color:'yellow'}}>
                             I utilized other forms of strategies such as examining mentions in Reddit.com/r/CryptoCurrency. The thread would often mention coins days or even months before their prices would shoot up astronomically high.
@@ -32,10 +32,10 @@ class cryptoMLtrader extends Component{
                         </p>
                         <p style={{color:'yellow'}}>
                             The last strategy to be implemented was using Machine Learning. The heaviest work was to gather data of cryptocurrencies in order to create training data and validation data.
-                            There weren't any API that provided more information regarding historical data of the coins other than price and volume.
+                            There weren't any APIs that provided more information regarding historical data of the coins other than price and volume.
                             Because I needed more data to give to the machine to train, this meant I had to gather data myself - This took roughly a month.
-                            After gathering data, I used Tensorflow in order to come up with the ideal model which involved fine-tuning variables and trying different layers. A lot of it was testing and waiting for the result.
-                            If the model performs above a certain threshold on the validation data, the actual strategy to buy a certain coin was if the model gives more than a 80% confidence that buying that coin will result in an increase in price.
+                            After gathering data, I used Tensorflow in order to come up with the ideal model which involved fine-tuning variables and trying different layers.
+                            If the model performs above a certain threshold on the validation data, the actual strategy to buy a certain coin was if the model gives more than a 90% confidence that buying that coin at that moment will result in an increase in price.
                         </p>
                     </div>
                     <div style={{display:'flex', flexDirection:'row', justifyContent:'space-around', alignItems:'center', width:'80%', marginBottom:60}}>

@@ -27,8 +27,8 @@ export default function FrontWelcome() {
                     </div>
                 </div>
                 <div className="text">
-                    <p>Welcome </p>
-                    <p>:)</p>
+                    <p>Welcome (:</p>
+                    <p>This is my Portfolio Website</p>
                 </div>
             </div>
 

@@ -34,7 +34,7 @@ class radii extends Component{
                         <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', textAlign:'center'}}>
                             <img style={style.projImages} alt="" src={require('../../images/ProjectImages/radii/radii1-1.png')}/>
                             <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
-                                <p style={{color:'yellow'}}>Main page of the app. Use the slider on the bottom to change radius of the Pulse to send</p>
+                                <p style={{color:'yellow'}}>Main page of the app. Use slider on the bottom to change the radius of the Pulse to send</p>
                             </div>
                         </div>
                         <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center',textAlign:'center'}}>
@@ -63,7 +63,7 @@ class radii extends Component{
                         <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center',textAlign:'center', width:'30%'}}>
                             <img style={style.projImages} alt="" src={require('../../images/ProjectImages/radii/radii9-1.png')}/>
                             <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
-                                <p style={{color:'yellow'}}>Can report Pulses. Multiple reports result in a ban.</p>
+                                <p style={{color:'yellow'}}>Can report Pulses. Multiple reports result in a ban</p>
                             </div>
                         </div>
                     </div>
