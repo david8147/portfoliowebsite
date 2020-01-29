@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     width:60%;
+    margin-bottom:100px;
 }
 .ProjectsMainText{
     padding-bottom: 5px;
@@ -11,7 +12,7 @@
     color:yellow;
     margin-bottom: 50px;
     font-size:45px;
-    margin-top:150px;
+    /*margin-top:150px;*/
     /*text-decoration: underline;*/
 }
 .ProjectsMainDiv{

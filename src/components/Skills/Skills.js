@@ -19,6 +19,8 @@ import gcp from "../../images/gcp.png"
 import nodejs from "../../images/nodejs.png"
 import rest from "../../images/rest.png"
 
+import Fade from 'react-reveal/Fade';
+
 import Contact from '.././Contacts/Contact'
 import './skillsStyles.css'
 
@@ -100,7 +102,10 @@ class Skills extends Component {
         const graphHeightPixels = 400;
         return (
             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', height: 600, marginBottom:-50}}>
-                <h1 className="mainText">SKILLS</h1>
+                <Fade left>
+                    <h1 className="mainText">SKILLS</h1>
+                </Fade>
+                <Fade right>
                     <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', marginBottom:0 }}>
                         <div style={{marginBottom:30, marginRight:30, padding:0, display:'flex', flexDirection:'column', justifyContent:'space-around',width:'18vh', height:'70vh'}}>
                             <p style={{fontSize:15 , color:'yellow', marginTop:-30}}>Call Me God of Programming</p>
@@ -130,66 +135,69 @@ class Skills extends Component {
                             </div>
                         </div>
                     </div>
-                <div style={{marginTop:-30,display: 'flex', flexDirection: 'row', justifyContents: "center", alignItems: 'center'}}>
-                    <a href="https://cloud.google.com/" target="_blank" rel="noopener noreferrer">
-                        <img alt="" src={gcp} className="Longer"/>
-                    </a>
-                    <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer">
-                        <img alt="" src={firebase} className="Technology"/>
-                    </a>
-                    <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer">
-                        <img alt="" src={aws} className="Longer"/>
-                    </a>
-                    <a href="https://www.sublimetext.com/" target="_blank" rel="noopener noreferrer">
-                        <img alt="" src={sublime} className="Technology"/>
-                    </a>
-                    <a href="https://git-for-windows.github.io/" target="_blank" rel="noopener noreferrer">
-                        <img alt="" src={gitbash}
-                             className="Technology"/>
-                    </a>
-                    <a href="https://www.getpostman.com/" target="_blank" rel="noopener noreferrer">
-                        <img alt="" src={postman} className="Technology"/>
-                    </a>
-                    <a href="https://www.raspberrypi.org/" target="_blank" rel="noopener noreferrer">
-                        <img alt="" src={raspberry} className="Technology"/>
-                    </a>
-                    <a href="https://developer.android.com/studio/index.html" target="_blank" rel="noopener noreferrer">
-                        <img alt="" src={androidstudio} className="Technology"/>
-                    </a>
-                    <a href="https://www.atlassian.com/software/jira" target="_blank" rel="noopener noreferrer">
-                        <img alt="" src={jira} className="Technology"/>
-                    </a>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                        <img alt="" src={largeblackgithub} className="Technology"/>
-                    </a>
-                    <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">
-                        <img alt="" src={nodejs} className="Longer"/>
-                    </a>
-                    <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer">
-                        <img alt="" src={express} className="Longer"/>
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank" rel="noopener noreferrer">
-                        <img alt="" src={rest} className="Longer"/>
-                    </a>
-                    <a href="https://www.gimp.org/" target="_blank" rel="noopener noreferrer">
-                        <img alt="" src={gimp} className="Technology"/>
-                    </a>
-                    <a href="https://bitbucket.org/product" target="_blank" rel="noopener noreferrer">
-                        <img alt="" src={bitbucket} className="Technology"/>
-                    </a>
-                    <a href="https://www.jetbrains.com/idea/" target="_blank" rel="noopener noreferrer">
-                        <img alt="" src={ijsmall} className="Technology"/>
-                    </a>
-                    <a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noopener noreferrer">
-                        <img alt="" src={pycharm} className="Technology"/>
-                    </a>
-                    <a href="https://www.jetbrains.com/clion/" target="_blank" rel="noopener noreferrer">
-                        <img alt="" src={clion} className="Technology"/>
-                    </a>
-                    <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener noreferrer">
-                        <img alt="" src={webstorm} className="Technology"/>
-                    </a>
-                </div>
+                </Fade>
+                <Fade left>
+                    <div style={{marginTop:-30,display: 'flex', flexDirection: 'row', justifyContents: "center", alignItems: 'center'}}>
+                        <a href="https://cloud.google.com/" target="_blank" rel="noopener noreferrer">
+                            <img alt="" src={gcp} className="Longer"/>
+                        </a>
+                        <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer">
+                            <img alt="" src={firebase} className="Technology"/>
+                        </a>
+                        <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer">
+                            <img alt="" src={aws} className="Longer"/>
+                        </a>
+                        <a href="https://www.sublimetext.com/" target="_blank" rel="noopener noreferrer">
+                            <img alt="" src={sublime} className="Technology"/>
+                        </a>
+                        <a href="https://git-for-windows.github.io/" target="_blank" rel="noopener noreferrer">
+                            <img alt="" src={gitbash}
+                                 className="Technology"/>
+                        </a>
+                        <a href="https://www.getpostman.com/" target="_blank" rel="noopener noreferrer">
+                            <img alt="" src={postman} className="Technology"/>
+                        </a>
+                        <a href="https://www.raspberrypi.org/" target="_blank" rel="noopener noreferrer">
+                            <img alt="" src={raspberry} className="Technology"/>
+                        </a>
+                        <a href="https://developer.android.com/studio/index.html" target="_blank" rel="noopener noreferrer">
+                            <img alt="" src={androidstudio} className="Technology"/>
+                        </a>
+                        <a href="https://www.atlassian.com/software/jira" target="_blank" rel="noopener noreferrer">
+                            <img alt="" src={jira} className="Technology"/>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                            <img alt="" src={largeblackgithub} className="Technology"/>
+                        </a>
+                        <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">
+                            <img alt="" src={nodejs} className="Longer"/>
+                        </a>
+                        <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer">
+                            <img alt="" src={express} className="Longer"/>
+                        </a>
+                        <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank" rel="noopener noreferrer">
+                            <img alt="" src={rest} className="Longer"/>
+                        </a>
+                        <a href="https://www.gimp.org/" target="_blank" rel="noopener noreferrer">
+                            <img alt="" src={gimp} className="Technology"/>
+                        </a>
+                        <a href="https://bitbucket.org/product" target="_blank" rel="noopener noreferrer">
+                            <img alt="" src={bitbucket} className="Technology"/>
+                        </a>
+                        <a href="https://www.jetbrains.com/idea/" target="_blank" rel="noopener noreferrer">
+                            <img alt="" src={ijsmall} className="Technology"/>
+                        </a>
+                        <a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noopener noreferrer">
+                            <img alt="" src={pycharm} className="Technology"/>
+                        </a>
+                        <a href="https://www.jetbrains.com/clion/" target="_blank" rel="noopener noreferrer">
+                            <img alt="" src={clion} className="Technology"/>
+                        </a>
+                        <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener noreferrer">
+                            <img alt="" src={webstorm} className="Technology"/>
+                        </a>
+                    </div>
+                </Fade>
                 <Contact/>
             </div>
         )

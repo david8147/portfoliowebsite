@@ -6,7 +6,7 @@ class Front extends Component{
     render(){
         return(
             <div style={{ display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'flex-start',
-                marginLeft:100, marginTop:-100,height:window.innerHeight*1,marginBottom:50 }}>
+                marginLeft:100, marginTop:-100,height:window.innerHeight*1,marginBottom:200 }}>
                 <p className='FrontNameText'>David Woo</p>
                 <div className='FrontMovingText'>
                     Software Engineer: &nbsp;

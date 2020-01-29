@@ -177,9 +177,7 @@ class Home extends Component{
                             this.FIFTH = section;
                         }}>
                         </section>
-                        <Fade up>
-                            <Skills/>
-                        </Fade>
+                        <Skills/>
 
                     </AnimatedBg>
                 </Fade>
